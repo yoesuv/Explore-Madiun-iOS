@@ -14,6 +14,10 @@
 		AB11D2D52A722691004B3E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB11D2D42A722691004B3E61 /* Assets.xcassets */; };
 		AB11D2D82A722691004B3E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB11D2D62A722691004B3E61 /* LaunchScreen.storyboard */; };
 		AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */; };
+		AB6C9F3A2A7257A400EFCB4D /* ListPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F392A7257A400EFCB4D /* ListPlaceViewController.swift */; };
+		AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */; };
+		AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */; };
+		AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		AB11D2D72A722691004B3E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB11D2D92A722691004B3E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AB6C9F392A7257A400EFCB4D /* ListPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceViewController.swift; sourceTree = "<group>"; };
+		AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		AB11D2CA2A722690004B3E61 /* Explore Madiun iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AB6C9F382A72578400EFCB4D /* Menu */,
 				AB11D2CB2A722690004B3E61 /* AppDelegate.swift */,
 				AB11D2CD2A722690004B3E61 /* SceneDelegate.swift */,
 				AB11D2CF2A722690004B3E61 /* SplashViewController.swift */,
@@ -68,6 +77,17 @@
 				AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */,
 			);
 			path = "Explore Madiun iOS";
+			sourceTree = "<group>";
+		};
+		AB6C9F382A72578400EFCB4D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				AB6C9F392A7257A400EFCB4D /* ListPlaceViewController.swift */,
+				AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */,
+				AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */,
+				AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +163,11 @@
 			files = (
 				AB11D2D02A722690004B3E61 /* SplashViewController.swift in Sources */,
 				AB11D2CC2A722690004B3E61 /* AppDelegate.swift in Sources */,
+				AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */,
 				AB11D2CE2A722690004B3E61 /* SceneDelegate.swift in Sources */,
+				AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */,
+				AB6C9F3A2A7257A400EFCB4D /* ListPlaceViewController.swift in Sources */,
+				AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */,
 				AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
