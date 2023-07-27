@@ -13,6 +13,7 @@
 		AB11D2D32A722690004B3E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB11D2D12A722690004B3E61 /* Main.storyboard */; };
 		AB11D2D52A722691004B3E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB11D2D42A722691004B3E61 /* Assets.xcassets */; };
 		AB11D2D82A722691004B3E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB11D2D62A722691004B3E61 /* LaunchScreen.storyboard */; };
+		AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AB11D2D42A722691004B3E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB11D2D72A722691004B3E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB11D2D92A722691004B3E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				AB11D2D42A722691004B3E61 /* Assets.xcassets */,
 				AB11D2D62A722691004B3E61 /* LaunchScreen.storyboard */,
 				AB11D2D92A722691004B3E61 /* Info.plist */,
+				AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */,
 			);
 			path = "Explore Madiun iOS";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				AB11D2D02A722690004B3E61 /* ViewController.swift in Sources */,
 				AB11D2CC2A722690004B3E61 /* AppDelegate.swift in Sources */,
 				AB11D2CE2A722690004B3E61 /* SceneDelegate.swift in Sources */,
+				AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
