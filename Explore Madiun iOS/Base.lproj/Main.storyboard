@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c6T-zp-z6Q">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,15 +31,19 @@
                             <constraint firstItem="Ny5-gq-VVO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L6x-09-mnU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="uhk-1w-yTf"/>
+                    <connections>
+                        <segue destination="DtO-FL-Lug" kind="show" identifier="SplashToHome" id="J9b-LZ-wrb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44" y="-27"/>
+            <point key="canvasLocation" x="970.2290076335878" y="-27.464788732394368"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="YMH-1A-BgD">
             <objects>
-                <viewController id="DtO-FL-Lug" customClass="HomeViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="DtO-FL-Lug" customClass="HomeViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rgm-XM-gSb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,10 +62,29 @@
                             <constraint firstItem="Uyg-RH-8O0" firstAttribute="centerY" secondItem="rgm-XM-gSb" secondAttribute="centerY" id="k6x-zF-ADb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="viK-AN-cvi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd6-rM-GUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808" y="-27"/>
+            <point key="canvasLocation" x="1790" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="naG-2W-Jsh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c6T-zp-z6Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DwE-9c-hzb">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lJ4-fA-miY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jov-Wc-xQv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
