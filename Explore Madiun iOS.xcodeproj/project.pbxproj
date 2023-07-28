@@ -18,9 +18,12 @@
 		AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */; };
 		AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */; };
 		AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */; };
+		FACA4B9BA8E67752DF829CEC /* Pods_Explore_Madiun_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Explore_Madiun_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		681E3D4481FBC532B2B814CB /* Pods-Explore Madiun iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explore Madiun iOS.debug.xcconfig"; path = "Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AB11D2C82A722690004B3E61 /* Explore Madiun iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Explore Madiun iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB11D2CB2A722690004B3E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB11D2CD2A722690004B3E61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CCE87CC4C975D10B57E01850 /* Pods-Explore Madiun iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explore Madiun iOS.release.xcconfig"; path = "Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACA4B9BA8E67752DF829CEC /* Pods_Explore_Madiun_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65235ECFF0CE3267BFAF527A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				681E3D4481FBC532B2B814CB /* Pods-Explore Madiun iOS.debug.xcconfig */,
+				CCE87CC4C975D10B57E01850 /* Pods-Explore Madiun iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C14250FDFEB696DB9C9009B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB11D2BF2A722690004B3E61 = {
 			isa = PBXGroup;
 			children = (
 				AB11D2CA2A722690004B3E61 /* Explore Madiun iOS */,
 				AB11D2C92A722690004B3E61 /* Products */,
+				65235ECFF0CE3267BFAF527A /* Pods */,
+				7C14250FDFEB696DB9C9009B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB11D2DC2A722691004B3E61 /* Build configuration list for PBXNativeTarget "Explore Madiun iOS" */;
 			buildPhases = (
+				D54A5D56B303B1ECD5D3A989 /* [CP] Check Pods Manifest.lock */,
 				AB11D2C42A722690004B3E61 /* Sources */,
 				AB11D2C52A722690004B3E61 /* Frameworks */,
 				AB11D2C62A722690004B3E61 /* Resources */,
+				DA8F4876155B1B9294879A76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +182,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D54A5D56B303B1ECD5D3A989 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Explore Madiun iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8F4876155B1B9294879A76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB11D2C42A722690004B3E61 /* Sources */ = {
@@ -310,6 +379,7 @@
 		};
 		AB11D2DD2A722691004B3E61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 681E3D4481FBC532B2B814CB /* Pods-Explore Madiun iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -338,6 +408,7 @@
 		};
 		AB11D2DE2A722691004B3E61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE87CC4C975D10B57E01850 /* Pods-Explore Madiun iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
