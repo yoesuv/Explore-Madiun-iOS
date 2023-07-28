@@ -8,6 +8,10 @@
 import UIKit
 
 class ListPlaceViewController: UIViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.title = "List Place"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
