@@ -8,6 +8,10 @@
 import UIKit
 
 class GalleryViewController: UIViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.title = "Gallery"
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
