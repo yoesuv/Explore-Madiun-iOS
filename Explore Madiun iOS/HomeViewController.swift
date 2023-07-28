@@ -15,7 +15,7 @@ class HomeViewController: UITabBarController {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(named: "Primary")
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "Pacifico", size: 20)!]
         
         self.navigationController?.navigationBar.standardAppearance = appearance
         self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
@@ -28,6 +28,10 @@ class HomeViewController: UITabBarController {
     private func setupTabBar() {
         self.tabBar.backgroundColor = UIColor.white
         self.tabBar.tintColor = UIColor(named: "Primary")
+        
+        let appearance = UITabBarItem.appearance()
+        appearance.setTitleTextAttributes([.font: UIFont(name: "Lato", size: 11)!], for: .normal)
+        
         if let items = self.tabBar.items {
             items[0].title = "List Place"
             items[0].image = UIImage(systemName: "list.bullet.rectangle")
