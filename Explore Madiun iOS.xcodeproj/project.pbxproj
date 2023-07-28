@@ -30,6 +30,7 @@
 		AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */; };
 		AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */; };
 		AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */; };
+		ABD2D1B32A73C3C0006343BB /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD2D1B22A73C3C0006343BB /* pacifico.ttf */; };
 		FACA4B9BA8E67752DF829CEC /* Pods_Explore_Madiun_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		ABD2D1B22A73C3C0006343BB /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		CCE87CC4C975D10B57E01850 /* Pods-Explore Madiun iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explore Madiun iOS.release.xcconfig"; path = "Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 		AB2A34B62A73AB3900D4A3DD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				ABD2D1B22A73C3C0006343BB /* pacifico.ttf */,
 				AB2A34C12A73ABEB00D4A3DD /* Lato-BoldItalic.ttf */,
 				AB2A34BF2A73ABE100D4A3DD /* Lato-Bold.ttf */,
 				AB2A34BD2A73ABD800D4A3DD /* Lato-BlackItalic.ttf */,
@@ -238,6 +241,7 @@
 				AB2A34BA2A73ABBC00D4A3DD /* Lato-Italic.ttf in Resources */,
 				AB2A34C02A73ABE100D4A3DD /* Lato-Bold.ttf in Resources */,
 				AB06F2562A735DB500A1A64C /* PlaceCell.xib in Resources */,
+				ABD2D1B32A73C3C0006343BB /* pacifico.ttf in Resources */,
 				AB2A34C22A73ABEB00D4A3DD /* Lato-BoldItalic.ttf in Resources */,
 				AB2A34C82A73AC0700D4A3DD /* Lato-Thin.ttf in Resources */,
 			);
