@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB06F2552A735DB500A1A64C /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06F2532A735DB500A1A64C /* PlaceCell.swift */; };
+		AB06F2562A735DB500A1A64C /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB06F2542A735DB500A1A64C /* PlaceCell.xib */; };
 		AB11D2CC2A722690004B3E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11D2CB2A722690004B3E61 /* AppDelegate.swift */; };
 		AB11D2CE2A722690004B3E61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11D2CD2A722690004B3E61 /* SceneDelegate.swift */; };
 		AB11D2D02A722690004B3E61 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11D2CF2A722690004B3E61 /* SplashViewController.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Explore_Madiun_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		681E3D4481FBC532B2B814CB /* Pods-Explore Madiun iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explore Madiun iOS.debug.xcconfig"; path = "Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AB06F2532A735DB500A1A64C /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		AB06F2542A735DB500A1A64C /* PlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
 		AB11D2C82A722690004B3E61 /* Explore Madiun iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Explore Madiun iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB11D2CB2A722690004B3E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB11D2CD2A722690004B3E61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +62,6 @@
 				681E3D4481FBC532B2B814CB /* Pods-Explore Madiun iOS.debug.xcconfig */,
 				CCE87CC4C975D10B57E01850 /* Pods-Explore Madiun iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -68,6 +71,15 @@
 				403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB06F2522A735D4B00A1A64C /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				AB06F2532A735DB500A1A64C /* PlaceCell.swift */,
+				AB06F2542A735DB500A1A64C /* PlaceCell.xib */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 		AB11D2BF2A722690004B3E61 = {
@@ -91,6 +103,7 @@
 		AB11D2CA2A722690004B3E61 /* Explore Madiun iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AB06F2522A735D4B00A1A64C /* Widgets */,
 				AB6C9F382A72578400EFCB4D /* Menu */,
 				AB11D2CB2A722690004B3E61 /* AppDelegate.swift */,
 				AB11D2CD2A722690004B3E61 /* SceneDelegate.swift */,
@@ -178,6 +191,7 @@
 				AB11D2D82A722691004B3E61 /* LaunchScreen.storyboard in Resources */,
 				AB11D2D52A722691004B3E61 /* Assets.xcassets in Resources */,
 				AB11D2D32A722690004B3E61 /* Main.storyboard in Resources */,
+				AB06F2562A735DB500A1A64C /* PlaceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +252,7 @@
 				AB6C9F3A2A7257A400EFCB4D /* ListPlaceViewController.swift in Sources */,
 				AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */,
 				AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */,
+				AB06F2552A735DB500A1A64C /* PlaceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
