@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		AB06F2552A735DB500A1A64C /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB06F2532A735DB500A1A64C /* PlaceCell.swift */; };
 		AB06F2562A735DB500A1A64C /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB06F2542A735DB500A1A64C /* PlaceCell.xib */; };
+		AB074E092A74C64D008C2BBC /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB074E072A74C64D008C2BBC /* GalleryCell.swift */; };
+		AB074E0A2A74C64D008C2BBC /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB074E082A74C64D008C2BBC /* GalleryCell.xib */; };
 		AB11D2CC2A722690004B3E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11D2CB2A722690004B3E61 /* AppDelegate.swift */; };
 		AB11D2CE2A722690004B3E61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11D2CD2A722690004B3E61 /* SceneDelegate.swift */; };
 		AB11D2D02A722690004B3E61 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB11D2CF2A722690004B3E61 /* SplashViewController.swift */; };
@@ -39,6 +41,8 @@
 		681E3D4481FBC532B2B814CB /* Pods-Explore Madiun iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explore Madiun iOS.debug.xcconfig"; path = "Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AB06F2532A735DB500A1A64C /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
 		AB06F2542A735DB500A1A64C /* PlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
+		AB074E072A74C64D008C2BBC /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		AB074E082A74C64D008C2BBC /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
 		AB11D2C82A722690004B3E61 /* Explore Madiun iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Explore Madiun iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB11D2CB2A722690004B3E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB11D2CD2A722690004B3E61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			children = (
 				AB06F2532A735DB500A1A64C /* PlaceCell.swift */,
 				AB06F2542A735DB500A1A64C /* PlaceCell.xib */,
+				AB074E072A74C64D008C2BBC /* GalleryCell.swift */,
+				AB074E082A74C64D008C2BBC /* GalleryCell.xib */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB074E0A2A74C64D008C2BBC /* GalleryCell.xib in Resources */,
 				AB2A34BE2A73ABD800D4A3DD /* Lato-BlackItalic.ttf in Resources */,
 				AB2A34CA2A73AC1100D4A3DD /* Lato-ThinItalic.ttf in Resources */,
 				AB2A34BC2A73ABCD00D4A3DD /* Lato-Black.ttf in Resources */,
@@ -302,6 +309,7 @@
 				AB11D2CE2A722690004B3E61 /* SceneDelegate.swift in Sources */,
 				AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */,
 				AB6C9F3A2A7257A400EFCB4D /* ListPlaceViewController.swift in Sources */,
+				AB074E092A74C64D008C2BBC /* GalleryCell.swift in Sources */,
 				AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */,
 				AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */,
 				AB06F2552A735DB500A1A64C /* PlaceCell.swift in Sources */,

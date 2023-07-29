@@ -106,21 +106,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daH-g1-DcQ">
-                                <rect key="frame" x="170" y="415.66666666666669" width="53.333333333333343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IZK-6J-AGw">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bf9-j2-T0J">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="caK-OX-pxa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="daH-g1-DcQ" firstAttribute="centerX" secondItem="lPd-lH-vdY" secondAttribute="centerX" id="9xX-3C-pHR"/>
-                            <constraint firstItem="daH-g1-DcQ" firstAttribute="centerY" secondItem="lPd-lH-vdY" secondAttribute="centerY" id="o4b-CJ-V4h"/>
+                            <constraint firstItem="IZK-6J-AGw" firstAttribute="leading" secondItem="caK-OX-pxa" secondAttribute="leading" id="Wxj-cT-WVD"/>
+                            <constraint firstItem="IZK-6J-AGw" firstAttribute="top" secondItem="caK-OX-pxa" secondAttribute="top" id="nJ4-nd-tKa"/>
+                            <constraint firstItem="caK-OX-pxa" firstAttribute="trailing" secondItem="IZK-6J-AGw" secondAttribute="trailing" id="nfO-u2-gid"/>
+                            <constraint firstItem="caK-OX-pxa" firstAttribute="bottom" secondItem="IZK-6J-AGw" secondAttribute="bottom" id="pFd-WS-636"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="DlL-tU-qJ8"/>
+                    <connections>
+                        <outlet property="collectionViewGallery" destination="IZK-6J-AGw" id="2dX-zN-DlQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oN5-tP-KKj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
