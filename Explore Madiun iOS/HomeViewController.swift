@@ -15,6 +15,7 @@ class HomeViewController: UITabBarController {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(named: "Primary")
+        appearance.shadowColor = UIColor(named: "Primary")
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "Pacifico", size: 20)!]
         
         self.navigationController?.navigationBar.standardAppearance = appearance

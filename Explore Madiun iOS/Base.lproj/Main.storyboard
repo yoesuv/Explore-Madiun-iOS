@@ -172,21 +172,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt8-LN-A3Q">
-                                <rect key="frame" x="173.66666666666666" y="415.66666666666669" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w51-P2-yrS" customClass="TabsView" customModule="Explore_Madiun_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="103" width="393" height="55"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="E2y-Gf-OXd"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fcJ-Bg-d5P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Mt8-LN-A3Q" firstAttribute="centerX" secondItem="s9U-WE-1mP" secondAttribute="centerX" id="Of1-7a-yjG"/>
-                            <constraint firstItem="Mt8-LN-A3Q" firstAttribute="centerY" secondItem="s9U-WE-1mP" secondAttribute="centerY" id="faW-xW-BJj"/>
+                            <constraint firstItem="w51-P2-yrS" firstAttribute="leading" secondItem="fcJ-Bg-d5P" secondAttribute="leading" id="k7S-Rg-ZDC"/>
+                            <constraint firstItem="w51-P2-yrS" firstAttribute="top" secondItem="fcJ-Bg-d5P" secondAttribute="top" id="pWF-Hz-5eF"/>
+                            <constraint firstItem="fcJ-Bg-d5P" firstAttribute="trailing" secondItem="w51-P2-yrS" secondAttribute="trailing" id="ywF-Ym-Mce"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="CYz-Ui-UED"/>
+                    <connections>
+                        <outlet property="tabsView" destination="w51-P2-yrS" id="HWc-kX-dHT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F54-3A-ILE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
