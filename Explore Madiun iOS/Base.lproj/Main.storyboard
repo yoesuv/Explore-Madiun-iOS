@@ -172,25 +172,146 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt8-LN-A3Q">
-                                <rect key="frame" x="173.66666666666666" y="415.66666666666669" width="46" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w51-P2-yrS" customClass="TabsView" customModule="Explore_Madiun_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="103" width="393" height="55"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="E2y-Gf-OXd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fcJ-Bg-d5P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w51-P2-yrS" firstAttribute="leading" secondItem="fcJ-Bg-d5P" secondAttribute="leading" id="k7S-Rg-ZDC"/>
+                            <constraint firstItem="w51-P2-yrS" firstAttribute="top" secondItem="fcJ-Bg-d5P" secondAttribute="top" id="pWF-Hz-5eF"/>
+                            <constraint firstItem="fcJ-Bg-d5P" firstAttribute="trailing" secondItem="w51-P2-yrS" secondAttribute="trailing" id="ywF-Ym-Mce"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="CYz-Ui-UED"/>
+                    <connections>
+                        <outlet property="tabsView" destination="w51-P2-yrS" id="HWc-kX-dHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F54-3A-ILE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3236" y="761"/>
+        </scene>
+        <!--About Page View Controller-->
+        <scene sceneID="Her-ue-eba">
+            <objects>
+                <pageViewController storyboardIdentifier="AboutPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="JmH-Qr-hqc" customClass="AboutPageViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMT-dC-O7o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3236" y="1508"/>
+        </scene>
+        <!--About Information View Controller-->
+        <scene sceneID="pfW-I3-W2J">
+            <objects>
+                <viewController storyboardIdentifier="AboutInformationViewController" id="jcd-JO-AOq" customClass="AboutInformationViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tD4-7f-mWm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m73-AM-RdT">
+                                <rect key="frame" x="150.66666666666666" y="415.66666666666669" width="91.666666666666657" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KnN-dj-fwb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m73-AM-RdT" firstAttribute="centerX" secondItem="tD4-7f-mWm" secondAttribute="centerX" id="9kW-Vs-WI9"/>
+                            <constraint firstItem="m73-AM-RdT" firstAttribute="centerY" secondItem="tD4-7f-mWm" secondAttribute="centerY" id="ziU-zf-2wf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCz-4P-uZk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="2213"/>
+        </scene>
+        <!--About Changelog View Controller-->
+        <scene sceneID="EsM-4o-8hu">
+            <objects>
+                <viewController storyboardIdentifier="AboutChangelogViewController" id="sqR-Y3-QCg" customClass="AboutChangelogViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cee-Rj-AnT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btl-vs-V7Y">
+                                <rect key="frame" x="166.66666666666666" y="415.66666666666669" width="59.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="fcJ-Bg-d5P"/>
+                        <viewLayoutGuide key="safeArea" id="COG-js-422"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Mt8-LN-A3Q" firstAttribute="centerX" secondItem="s9U-WE-1mP" secondAttribute="centerX" id="Of1-7a-yjG"/>
-                            <constraint firstItem="Mt8-LN-A3Q" firstAttribute="centerY" secondItem="s9U-WE-1mP" secondAttribute="centerY" id="faW-xW-BJj"/>
+                            <constraint firstItem="Btl-vs-V7Y" firstAttribute="centerY" secondItem="Cee-Rj-AnT" secondAttribute="centerY" id="70G-es-pXh"/>
+                            <constraint firstItem="Btl-vs-V7Y" firstAttribute="centerX" secondItem="Cee-Rj-AnT" secondAttribute="centerX" id="jGv-YS-dAm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="CYz-Ui-UED"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F54-3A-ILE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1a-lY-gJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3236" y="761"/>
+            <point key="canvasLocation" x="2857" y="2213"/>
+        </scene>
+        <!--About Thanks View Controller-->
+        <scene sceneID="fa3-Cf-ou7">
+            <objects>
+                <viewController storyboardIdentifier="AboutThanksViewController" id="ns7-rF-Y3t" customClass="AboutThanksViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xjB-HF-L3w">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmq-0R-SZk">
+                                <rect key="frame" x="169" y="415.66666666666669" width="55.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dyh-nA-hZ1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dmq-0R-SZk" firstAttribute="centerX" secondItem="xjB-HF-L3w" secondAttribute="centerX" id="Xks-8W-nuq"/>
+                            <constraint firstItem="Dmq-0R-SZk" firstAttribute="centerY" secondItem="xjB-HF-L3w" secondAttribute="centerY" id="dba-qs-RWA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Sw-A0-z7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3654" y="2213"/>
+        </scene>
+        <!--About Library View Controller-->
+        <scene sceneID="Rqa-oV-duf">
+            <objects>
+                <viewController storyboardIdentifier="AboutLibraryViewController" id="jZv-QD-AkN" customClass="AboutLibraryViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yjf-0q-LDv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eai-rU-biK">
+                                <rect key="frame" x="170" y="415.66666666666669" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gep-7Y-cXg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eai-rU-biK" firstAttribute="centerX" secondItem="yjf-0q-LDv" secondAttribute="centerX" id="nGs-J4-QyM"/>
+                            <constraint firstItem="eai-rU-biK" firstAttribute="centerY" secondItem="yjf-0q-LDv" secondAttribute="centerY" id="xPd-Mb-WDm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ASA-ga-Mts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4463" y="2213"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="naG-2W-Jsh">

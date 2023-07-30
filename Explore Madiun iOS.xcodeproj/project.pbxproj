@@ -27,11 +27,18 @@
 		AB2A34C62A73ABFD00D4A3DD /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34C52A73ABFD00D4A3DD /* Lato-LightItalic.ttf */; };
 		AB2A34C82A73AC0700D4A3DD /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34C72A73AC0700D4A3DD /* Lato-Thin.ttf */; };
 		AB2A34CA2A73AC1100D4A3DD /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34C92A73AC1100D4A3DD /* Lato-ThinItalic.ttf */; };
+		AB5AF47E2A750AB4003CDB71 /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5AF47D2A750AB4003CDB71 /* TabCell.swift */; };
+		AB5AF4802A750AF8003CDB71 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5AF47F2A750AF8003CDB71 /* TabsView.swift */; };
 		AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */; };
 		AB6C9F3A2A7257A400EFCB4D /* ListPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F392A7257A400EFCB4D /* ListPlaceViewController.swift */; };
 		AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */; };
 		AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */; };
 		AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */; };
+		AB8637352A761560001264C8 /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8637342A761560001264C8 /* AboutPageViewController.swift */; };
+		AB8637372A7618DA001264C8 /* AboutInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8637362A7618DA001264C8 /* AboutInformationViewController.swift */; };
+		AB8637392A761971001264C8 /* AboutChangelogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8637382A761971001264C8 /* AboutChangelogViewController.swift */; };
+		AB86373B2A7619F8001264C8 /* AboutThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86373A2A7619F8001264C8 /* AboutThanksViewController.swift */; };
+		AB86373D2A761AB3001264C8 /* AboutLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */; };
 		ABD2D1B32A73C3C0006343BB /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD2D1B22A73C3C0006343BB /* pacifico.ttf */; };
 		FACA4B9BA8E67752DF829CEC /* Pods_Explore_Madiun_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -61,11 +68,18 @@
 		AB2A34C52A73ABFD00D4A3DD /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		AB2A34C72A73AC0700D4A3DD /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
 		AB2A34C92A73AC1100D4A3DD /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AB5AF47D2A750AB4003CDB71 /* TabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
+		AB5AF47F2A750AF8003CDB71 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AB6C9F392A7257A400EFCB4D /* ListPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceViewController.swift; sourceTree = "<group>"; };
 		AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		AB8637342A761560001264C8 /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
+		AB8637362A7618DA001264C8 /* AboutInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutInformationViewController.swift; sourceTree = "<group>"; };
+		AB8637382A761971001264C8 /* AboutChangelogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutChangelogViewController.swift; sourceTree = "<group>"; };
+		AB86373A2A7619F8001264C8 /* AboutThanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThanksViewController.swift; sourceTree = "<group>"; };
+		AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutLibraryViewController.swift; sourceTree = "<group>"; };
 		ABD2D1B22A73C3C0006343BB /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		CCE87CC4C975D10B57E01850 /* Pods-Explore Madiun iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explore Madiun iOS.release.xcconfig"; path = "Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +120,9 @@
 				AB06F2542A735DB500A1A64C /* PlaceCell.xib */,
 				AB074E072A74C64D008C2BBC /* GalleryCell.swift */,
 				AB074E082A74C64D008C2BBC /* GalleryCell.xib */,
+				AB5AF47D2A750AB4003CDB71 /* TabCell.swift */,
+				AB5AF47F2A750AF8003CDB71 /* TabsView.swift */,
+				AB8637342A761560001264C8 /* AboutPageViewController.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -171,6 +188,10 @@
 				AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */,
 				AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */,
 				AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */,
+				AB8637362A7618DA001264C8 /* AboutInformationViewController.swift */,
+				AB8637382A761971001264C8 /* AboutChangelogViewController.swift */,
+				AB86373A2A7619F8001264C8 /* AboutThanksViewController.swift */,
+				AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -306,12 +327,19 @@
 				AB11D2D02A722690004B3E61 /* SplashViewController.swift in Sources */,
 				AB11D2CC2A722690004B3E61 /* AppDelegate.swift in Sources */,
 				AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */,
+				AB8637392A761971001264C8 /* AboutChangelogViewController.swift in Sources */,
+				AB5AF47E2A750AB4003CDB71 /* TabCell.swift in Sources */,
 				AB11D2CE2A722690004B3E61 /* SceneDelegate.swift in Sources */,
+				AB8637352A761560001264C8 /* AboutPageViewController.swift in Sources */,
 				AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */,
+				AB8637372A7618DA001264C8 /* AboutInformationViewController.swift in Sources */,
 				AB6C9F3A2A7257A400EFCB4D /* ListPlaceViewController.swift in Sources */,
+				AB86373D2A761AB3001264C8 /* AboutLibraryViewController.swift in Sources */,
 				AB074E092A74C64D008C2BBC /* GalleryCell.swift in Sources */,
 				AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */,
 				AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */,
+				AB86373B2A7619F8001264C8 /* AboutThanksViewController.swift in Sources */,
+				AB5AF4802A750AF8003CDB71 /* TabsView.swift in Sources */,
 				AB06F2552A735DB500A1A64C /* PlaceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
