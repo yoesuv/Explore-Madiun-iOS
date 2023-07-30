@@ -8,6 +8,8 @@
 import UIKit
 
 class AboutInformationViewController: UIViewController {
+    
+    var pageIndex: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()

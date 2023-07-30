@@ -8,6 +8,8 @@
 import UIKit
 
 class AboutLibraryViewController: UIViewController {
+    
+    var pageIndex: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -215,7 +215,7 @@
         <!--About Information View Controller-->
         <scene sceneID="pfW-I3-W2J">
             <objects>
-                <viewController id="jcd-JO-AOq" customClass="AboutInformationViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutInformationViewController" id="jcd-JO-AOq" customClass="AboutInformationViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tD4-7f-mWm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +242,7 @@
         <!--About Changelog View Controller-->
         <scene sceneID="EsM-4o-8hu">
             <objects>
-                <viewController id="sqR-Y3-QCg" customClass="AboutChangelogViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutChangelogViewController" id="sqR-Y3-QCg" customClass="AboutChangelogViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cee-Rj-AnT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,7 +269,7 @@
         <!--About Thanks View Controller-->
         <scene sceneID="fa3-Cf-ou7">
             <objects>
-                <viewController id="ns7-rF-Y3t" customClass="AboutThanksViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutThanksViewController" id="ns7-rF-Y3t" customClass="AboutThanksViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xjB-HF-L3w">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,7 +296,7 @@
         <!--About Library View Controller-->
         <scene sceneID="Rqa-oV-duf">
             <objects>
-                <viewController id="jZv-QD-AkN" customClass="AboutLibraryViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutLibraryViewController" id="jZv-QD-AkN" customClass="AboutLibraryViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yjf-0q-LDv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
