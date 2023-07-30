@@ -72,7 +72,6 @@ class AboutViewController: UIViewController {
 extension AboutViewController: TabsDelegate {
     
     func tabsViewDidSelectItemAt(position: Int) {
-        print("AboutViewController # position \(position)")
         if position != currentIndex {
             if position > currentIndex {
                 self.pageController.setViewControllers([showViewController(position)!], direction: .forward, animated: true, completion: nil)
