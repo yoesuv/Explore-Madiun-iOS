@@ -165,9 +165,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-Q1-6OH">
-                                <rect key="frame" x="146" y="415.66666666666669" width="101.33333333333331" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97a-vH-nJd">
+                                <rect key="frame" x="0.0" y="103" width="393" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="yEf-es-kbd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFO-Ds-zGC">
+                                <rect key="frame" x="10" y="343" width="373" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -175,11 +181,19 @@
                         <viewLayoutGuide key="safeArea" id="QT1-hY-LNE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4Um-Q1-6OH" firstAttribute="centerY" secondItem="Sk0-HC-bIu" secondAttribute="centerY" id="C44-lS-8fb"/>
-                            <constraint firstItem="4Um-Q1-6OH" firstAttribute="centerX" secondItem="Sk0-HC-bIu" secondAttribute="centerX" id="IDQ-3y-Zlr"/>
+                            <constraint firstItem="QT1-hY-LNE" firstAttribute="trailing" secondItem="qFO-Ds-zGC" secondAttribute="trailing" constant="10" id="5t2-QZ-nzf"/>
+                            <constraint firstItem="97a-vH-nJd" firstAttribute="leading" secondItem="QT1-hY-LNE" secondAttribute="leading" id="CQ1-lI-ObO"/>
+                            <constraint firstItem="QT1-hY-LNE" firstAttribute="trailing" secondItem="97a-vH-nJd" secondAttribute="trailing" id="Ooe-HJ-JmX"/>
+                            <constraint firstItem="97a-vH-nJd" firstAttribute="top" secondItem="QT1-hY-LNE" secondAttribute="top" id="cpu-Pz-trr"/>
+                            <constraint firstItem="qFO-Ds-zGC" firstAttribute="leading" secondItem="QT1-hY-LNE" secondAttribute="leading" constant="10" id="iZM-nY-rwv"/>
+                            <constraint firstItem="qFO-Ds-zGC" firstAttribute="top" secondItem="97a-vH-nJd" secondAttribute="bottom" constant="10" id="jIM-YP-mCF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uZ1-tf-o8v"/>
+                    <connections>
+                        <outlet property="imageViewDetailGallery" destination="97a-vH-nJd" id="DMf-G9-5KQ"/>
+                        <outlet property="labelGalleryDescription" destination="qFO-Ds-zGC" id="5F9-0N-tLr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdC-5W-deq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
