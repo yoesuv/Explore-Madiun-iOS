@@ -127,6 +127,34 @@
             </objects>
             <point key="canvasLocation" x="723" y="1508"/>
         </scene>
+        <!--Detail Gallery View Controller-->
+        <scene sceneID="zSz-Uh-w7O">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="JCg-gw-s8e" customClass="DetailGalleryViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sk0-HC-bIu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-Q1-6OH">
+                                <rect key="frame" x="146" y="415.66666666666669" width="101.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QT1-hY-LNE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Um-Q1-6OH" firstAttribute="centerY" secondItem="Sk0-HC-bIu" secondAttribute="centerY" id="C44-lS-8fb"/>
+                            <constraint firstItem="4Um-Q1-6OH" firstAttribute="centerX" secondItem="Sk0-HC-bIu" secondAttribute="centerX" id="IDQ-3y-Zlr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uZ1-tf-o8v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdC-5W-deq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="1508"/>
+        </scene>
         <!--Item-->
         <scene sceneID="RbL-AP-Mje">
             <objects>
@@ -159,6 +187,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="DlL-tU-qJ8"/>
                     <connections>
                         <outlet property="collectionViewGallery" destination="IZK-6J-AGw" id="2dX-zN-DlQ"/>
+                        <segue destination="JCg-gw-s8e" kind="show" identifier="GalleryToDetail" id="ujE-0i-YDo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oN5-tP-KKj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

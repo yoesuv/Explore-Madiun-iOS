@@ -27,6 +27,7 @@
 		AB2A34C62A73ABFD00D4A3DD /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34C52A73ABFD00D4A3DD /* Lato-LightItalic.ttf */; };
 		AB2A34C82A73AC0700D4A3DD /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34C72A73AC0700D4A3DD /* Lato-Thin.ttf */; };
 		AB2A34CA2A73AC1100D4A3DD /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34C92A73AC1100D4A3DD /* Lato-ThinItalic.ttf */; };
+		AB37B5092A77ABB40001157F /* DetailGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37B5082A77ABB40001157F /* DetailGalleryViewController.swift */; };
 		AB5AF47E2A750AB4003CDB71 /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5AF47D2A750AB4003CDB71 /* TabCell.swift */; };
 		AB5AF4802A750AF8003CDB71 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5AF47F2A750AF8003CDB71 /* TabsView.swift */; };
 		AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */; };
@@ -71,6 +72,7 @@
 		AB2A34C52A73ABFD00D4A3DD /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		AB2A34C72A73AC0700D4A3DD /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
 		AB2A34C92A73AC1100D4A3DD /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AB37B5082A77ABB40001157F /* DetailGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGalleryViewController.swift; sourceTree = "<group>"; };
 		AB5AF47D2A750AB4003CDB71 /* TabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
 		AB5AF47F2A750AF8003CDB71 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				AB86373A2A7619F8001264C8 /* AboutThanksViewController.swift */,
 				AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */,
 				ABECA5482A779E6600EADDD8 /* DetailPlaceViewController.swift */,
+				AB37B5082A77ABB40001157F /* DetailGalleryViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */,
 				AB8637392A761971001264C8 /* AboutChangelogViewController.swift in Sources */,
 				AB5AF47E2A750AB4003CDB71 /* TabCell.swift in Sources */,
+				AB37B5092A77ABB40001157F /* DetailGalleryViewController.swift in Sources */,
 				ABECA5492A779E6600EADDD8 /* DetailPlaceViewController.swift in Sources */,
 				AB11D2CE2A722690004B3E61 /* SceneDelegate.swift in Sources */,
 				AB8637352A761560001264C8 /* AboutPageViewController.swift in Sources */,

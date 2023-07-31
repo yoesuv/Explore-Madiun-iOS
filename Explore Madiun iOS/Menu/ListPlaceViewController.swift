@@ -28,6 +28,7 @@ class ListPlaceViewController: UIViewController {
         tableViewListPlace.layoutMargins = .zero
         tableViewListPlace.directionalLayoutMargins = .zero
         tableViewListPlace.rowHeight = 175
+        tableViewListPlace.showsVerticalScrollIndicator = false
         
         tableViewListPlace.dataSource = self
         tableViewListPlace.delegate = self

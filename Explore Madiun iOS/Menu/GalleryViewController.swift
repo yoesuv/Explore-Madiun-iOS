@@ -35,11 +35,17 @@ class GalleryViewController: UIViewController {
         
         self.collectionViewGallery.dataSource = self
         self.collectionViewGallery.delegate = self
+        self.collectionViewGallery.showsVerticalScrollIndicator = false
     }
 
 }
 
 extension GalleryViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "GalleryToDetail", sender: self)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.bounds.width
         let numberOfItemsPerRow: CGFloat = 3
