@@ -19,6 +19,7 @@ class HomeViewController: UITabBarController {
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "Pacifico", size: 20)!]
         
         self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationItem.backButtonDisplayMode = .minimal
         
         self.navigationController?.navigationBar.standardAppearance = appearance
         self.navigationController?.navigationBar.scrollEdgeAppearance = appearance
