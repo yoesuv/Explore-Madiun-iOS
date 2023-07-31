@@ -39,6 +39,7 @@
 		AB8637392A761971001264C8 /* AboutChangelogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8637382A761971001264C8 /* AboutChangelogViewController.swift */; };
 		AB86373B2A7619F8001264C8 /* AboutThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86373A2A7619F8001264C8 /* AboutThanksViewController.swift */; };
 		AB86373D2A761AB3001264C8 /* AboutLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */; };
+		AB8698422A775D0100C4974D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB8698412A775D0100C4974D /* GoogleService-Info.plist */; };
 		ABD2D1B32A73C3C0006343BB /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD2D1B22A73C3C0006343BB /* pacifico.ttf */; };
 		FACA4B9BA8E67752DF829CEC /* Pods_Explore_Madiun_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		AB8637382A761971001264C8 /* AboutChangelogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutChangelogViewController.swift; sourceTree = "<group>"; };
 		AB86373A2A7619F8001264C8 /* AboutThanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThanksViewController.swift; sourceTree = "<group>"; };
 		AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutLibraryViewController.swift; sourceTree = "<group>"; };
+		AB8698412A775D0100C4974D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABD2D1B22A73C3C0006343BB /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		CCE87CC4C975D10B57E01850 /* Pods-Explore Madiun iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explore Madiun iOS.release.xcconfig"; path = "Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 				AB11D2D42A722691004B3E61 /* Assets.xcassets */,
 				AB11D2D62A722691004B3E61 /* LaunchScreen.storyboard */,
 				AB11D2D92A722691004B3E61 /* Info.plist */,
+				AB8698412A775D0100C4974D /* GoogleService-Info.plist */,
 				AB6C9F362A72538D00EFCB4D /* HomeViewController.swift */,
 			);
 			path = "Explore Madiun iOS";
@@ -268,6 +271,7 @@
 				AB2A34C62A73ABFD00D4A3DD /* Lato-LightItalic.ttf in Resources */,
 				AB2A34BA2A73ABBC00D4A3DD /* Lato-Italic.ttf in Resources */,
 				AB2A34C02A73ABE100D4A3DD /* Lato-Bold.ttf in Resources */,
+				AB8698422A775D0100C4974D /* GoogleService-Info.plist in Resources */,
 				AB06F2562A735DB500A1A64C /* PlaceCell.xib in Resources */,
 				ABD2D1B32A73C3C0006343BB /* pacifico.ttf in Resources */,
 				AB2A34C22A73ABEB00D4A3DD /* Lato-BoldItalic.ttf in Resources */,

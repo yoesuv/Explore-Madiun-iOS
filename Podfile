@@ -7,5 +7,7 @@ target 'Explore Madiun iOS' do
 
   # Pods for Explore Madiun iOS
   pod 'Kingfisher', '~> 7.8.1'
+  pod 'FirebaseCore', '~> 10.12.0'
+  pod 'FirebaseAnalytics', '~> 10.12.0'
 
 end
