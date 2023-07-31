@@ -211,6 +211,7 @@
 				AB11D2C52A722690004B3E61 /* Frameworks */,
 				AB11D2C62A722690004B3E61 /* Resources */,
 				DA8F4876155B1B9294879A76 /* [CP] Embed Pods Frameworks */,
+				911C5380CD911606365A5E84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,6 +283,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		911C5380CD911606365A5E84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D54A5D56B303B1ECD5D3A989 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

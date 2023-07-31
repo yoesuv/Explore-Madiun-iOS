@@ -9,5 +9,6 @@ target 'Explore Madiun iOS' do
   pod 'Kingfisher', '~> 7.8.1'
   pod 'FirebaseCore', '~> 10.12.0'
   pod 'FirebaseAnalytics', '~> 10.12.0'
+  pod 'Google-Maps-iOS-Utils', '~> 4.2.2'
 
 end
