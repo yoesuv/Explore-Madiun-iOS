@@ -30,7 +30,7 @@ class ListPlaceViewController: UIViewController {
         tableViewListPlace.rowHeight = 175
         
         tableViewListPlace.dataSource = self
-        //tableViewListPlace.delegate = self
+        tableViewListPlace.delegate = self
     }
     
 }
@@ -49,6 +49,14 @@ extension ListPlaceViewController: UITableViewDataSource {
         let imgUrl = URL(string: "https://lh3.googleusercontent.com/-VdGBzQkMOZI/VoHY6IZRcTI/AAAAAAAAB6I/V68FY5RlsgQ/s640-Ic42/alun_alun_madiun.jpg")
         cell.imageViewItemPlace.kf.setImage(with: imgUrl)
         return cell
+    }
+    
+}
+
+extension ListPlaceViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ListPlaceToDetail", sender: self)
     }
     
 }

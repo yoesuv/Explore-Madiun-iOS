@@ -42,6 +42,7 @@
 		AB86506E2A778AA200B89924 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB86506D2A778AA200B89924 /* keys.plist */; };
 		AB8698422A775D0100C4974D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB8698412A775D0100C4974D /* GoogleService-Info.plist */; };
 		ABD2D1B32A73C3C0006343BB /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD2D1B22A73C3C0006343BB /* pacifico.ttf */; };
+		ABECA5492A779E6600EADDD8 /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECA5482A779E6600EADDD8 /* DetailPlaceViewController.swift */; };
 		FACA4B9BA8E67752DF829CEC /* Pods_Explore_Madiun_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		AB86506D2A778AA200B89924 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		AB8698412A775D0100C4974D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABD2D1B22A73C3C0006343BB /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
+		ABECA5482A779E6600EADDD8 /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
 		CCE87CC4C975D10B57E01850 /* Pods-Explore Madiun iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explore Madiun iOS.release.xcconfig"; path = "Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +200,7 @@
 				AB8637382A761971001264C8 /* AboutChangelogViewController.swift */,
 				AB86373A2A7619F8001264C8 /* AboutThanksViewController.swift */,
 				AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */,
+				ABECA5482A779E6600EADDD8 /* DetailPlaceViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */,
 				AB8637392A761971001264C8 /* AboutChangelogViewController.swift in Sources */,
 				AB5AF47E2A750AB4003CDB71 /* TabCell.swift in Sources */,
+				ABECA5492A779E6600EADDD8 /* DetailPlaceViewController.swift in Sources */,
 				AB11D2CE2A722690004B3E61 /* SceneDelegate.swift in Sources */,
 				AB8637352A761560001264C8 /* AboutPageViewController.swift in Sources */,
 				AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */,
