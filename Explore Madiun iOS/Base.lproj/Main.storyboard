@@ -10,6 +10,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
         <array key="pacifico.ttf">
             <string>Pacifico-Regular</string>
         </array>
@@ -92,11 +98,106 @@
                     <tabBarItem key="tabBarItem" title="Item" id="XjY-dl-Nmu"/>
                     <connections>
                         <outlet property="tableViewListPlace" destination="25f-3G-vGf" id="5b6-dx-HFY"/>
+                        <segue destination="fnP-Ef-gut" kind="show" identifier="ListPlaceToDetail" id="VwA-DY-edX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yo6-FA-Waa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="724" y="761"/>
+        </scene>
+        <!--Detail Place View Controller-->
+        <scene sceneID="lbi-nC-JNn">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="fnP-Ef-gut" customClass="DetailPlaceViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mUa-nO-OVV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zAD-um-ARc">
+                                <rect key="frame" x="0.0" y="103" width="393" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="Nhs-vU-Vrt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxS-2H-J3I">
+                                <rect key="frame" x="10" y="343" width="373" height="26.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4b-ug-qo6">
+                                <rect key="frame" x="10" y="374.66666666666669" width="373" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cp5-NK-Lu3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cp5-NK-Lu3" firstAttribute="trailing" secondItem="zAD-um-ARc" secondAttribute="trailing" id="0KY-7c-axV"/>
+                            <constraint firstItem="cp5-NK-Lu3" firstAttribute="trailing" secondItem="z4b-ug-qo6" secondAttribute="trailing" constant="10" id="5Dp-oM-pGe"/>
+                            <constraint firstItem="zAD-um-ARc" firstAttribute="leading" secondItem="cp5-NK-Lu3" secondAttribute="leading" id="7rw-sU-oY2"/>
+                            <constraint firstItem="FxS-2H-J3I" firstAttribute="top" secondItem="zAD-um-ARc" secondAttribute="bottom" constant="10" id="C1e-6o-BoJ"/>
+                            <constraint firstItem="FxS-2H-J3I" firstAttribute="leading" secondItem="cp5-NK-Lu3" secondAttribute="leading" constant="10" id="IcW-Zk-tyh"/>
+                            <constraint firstItem="z4b-ug-qo6" firstAttribute="top" secondItem="FxS-2H-J3I" secondAttribute="bottom" constant="5" id="MSr-DJ-fSS"/>
+                            <constraint firstItem="z4b-ug-qo6" firstAttribute="leading" secondItem="cp5-NK-Lu3" secondAttribute="leading" constant="10" id="No7-cz-u6k"/>
+                            <constraint firstItem="zAD-um-ARc" firstAttribute="top" secondItem="cp5-NK-Lu3" secondAttribute="top" id="Xdb-RA-MLa"/>
+                            <constraint firstItem="cp5-NK-Lu3" firstAttribute="trailing" secondItem="FxS-2H-J3I" secondAttribute="trailing" constant="10" id="umE-XL-AW4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xRJ-ju-13d"/>
+                    <connections>
+                        <outlet property="imageViewDetailPlace" destination="zAD-um-ARc" id="lpv-W5-met"/>
+                        <outlet property="labelDescription" destination="z4b-ug-qo6" id="ql4-M9-0Y6"/>
+                        <outlet property="labelName" destination="FxS-2H-J3I" id="Pf8-09-ATt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddB-MW-cdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="723" y="1508"/>
+        </scene>
+        <!--Detail Gallery View Controller-->
+        <scene sceneID="zSz-Uh-w7O">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="JCg-gw-s8e" customClass="DetailGalleryViewController" customModule="Explore_Madiun_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sk0-HC-bIu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="97a-vH-nJd">
+                                <rect key="frame" x="0.0" y="103" width="393" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="yEf-es-kbd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFO-Ds-zGC">
+                                <rect key="frame" x="10" y="343" width="373" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QT1-hY-LNE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QT1-hY-LNE" firstAttribute="trailing" secondItem="qFO-Ds-zGC" secondAttribute="trailing" constant="10" id="5t2-QZ-nzf"/>
+                            <constraint firstItem="97a-vH-nJd" firstAttribute="leading" secondItem="QT1-hY-LNE" secondAttribute="leading" id="CQ1-lI-ObO"/>
+                            <constraint firstItem="QT1-hY-LNE" firstAttribute="trailing" secondItem="97a-vH-nJd" secondAttribute="trailing" id="Ooe-HJ-JmX"/>
+                            <constraint firstItem="97a-vH-nJd" firstAttribute="top" secondItem="QT1-hY-LNE" secondAttribute="top" id="cpu-Pz-trr"/>
+                            <constraint firstItem="qFO-Ds-zGC" firstAttribute="leading" secondItem="QT1-hY-LNE" secondAttribute="leading" constant="10" id="iZM-nY-rwv"/>
+                            <constraint firstItem="qFO-Ds-zGC" firstAttribute="top" secondItem="97a-vH-nJd" secondAttribute="bottom" constant="10" id="jIM-YP-mCF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uZ1-tf-o8v"/>
+                    <connections>
+                        <outlet property="imageViewDetailGallery" destination="97a-vH-nJd" id="DMf-G9-5KQ"/>
+                        <outlet property="labelGalleryDescription" destination="qFO-Ds-zGC" id="5F9-0N-tLr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdC-5W-deq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="1508"/>
         </scene>
         <!--Item-->
         <scene sceneID="RbL-AP-Mje">
@@ -130,6 +231,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="DlL-tU-qJ8"/>
                     <connections>
                         <outlet property="collectionViewGallery" destination="IZK-6J-AGw" id="2dX-zN-DlQ"/>
+                        <segue destination="JCg-gw-s8e" kind="show" identifier="GalleryToDetail" id="ujE-0i-YDo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oN5-tP-KKj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
