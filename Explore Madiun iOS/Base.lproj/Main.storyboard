@@ -551,20 +551,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btl-vs-V7Y">
-                                <rect key="frame" x="157.66666666666666" y="395.66666666666669" width="60" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="er5-3j-hNK">
+                                <rect key="frame" x="0.0" y="50" width="375" height="728"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="COG-js-422"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Btl-vs-V7Y" firstAttribute="centerY" secondItem="Cee-Rj-AnT" secondAttribute="centerY" id="70G-es-pXh"/>
-                            <constraint firstItem="Btl-vs-V7Y" firstAttribute="centerX" secondItem="Cee-Rj-AnT" secondAttribute="centerX" id="jGv-YS-dAm"/>
+                            <constraint firstItem="er5-3j-hNK" firstAttribute="top" secondItem="COG-js-422" secondAttribute="top" id="1bk-VZ-7aR"/>
+                            <constraint firstItem="COG-js-422" firstAttribute="trailing" secondItem="er5-3j-hNK" secondAttribute="trailing" id="GEV-Ai-cOE"/>
+                            <constraint firstItem="er5-3j-hNK" firstAttribute="leading" secondItem="COG-js-422" secondAttribute="leading" id="MdD-qu-8wJ"/>
+                            <constraint firstItem="COG-js-422" firstAttribute="bottom" secondItem="er5-3j-hNK" secondAttribute="bottom" id="g2S-GD-dQA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableViewRelease" destination="er5-3j-hNK" id="deB-fO-vRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1a-lY-gJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

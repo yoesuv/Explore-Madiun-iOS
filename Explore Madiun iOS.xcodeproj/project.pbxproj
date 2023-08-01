@@ -42,6 +42,9 @@
 		AB86373D2A761AB3001264C8 /* AboutLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */; };
 		AB86506E2A778AA200B89924 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB86506D2A778AA200B89924 /* keys.plist */; };
 		AB8698422A775D0100C4974D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB8698412A775D0100C4974D /* GoogleService-Info.plist */; };
+		ABA213F52A78F64900A25E89 /* ReleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA213F32A78F64900A25E89 /* ReleaseCell.swift */; };
+		ABA213F62A78F64900A25E89 /* ReleaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA213F42A78F64900A25E89 /* ReleaseCell.xib */; };
+		ABA213F92A79001200A25E89 /* ReleaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA213F82A79001200A25E89 /* ReleaseModel.swift */; };
 		ABD2D1B32A73C3C0006343BB /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD2D1B22A73C3C0006343BB /* pacifico.ttf */; };
 		ABECA5492A779E6600EADDD8 /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECA5482A779E6600EADDD8 /* DetailPlaceViewController.swift */; };
 		FACA4B9BA8E67752DF829CEC /* Pods_Explore_Madiun_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CCC2EEA00720F8F64FA56 /* Pods_Explore_Madiun_iOS.framework */; };
@@ -87,6 +90,9 @@
 		AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutLibraryViewController.swift; sourceTree = "<group>"; };
 		AB86506D2A778AA200B89924 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		AB8698412A775D0100C4974D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ABA213F32A78F64900A25E89 /* ReleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseCell.swift; sourceTree = "<group>"; };
+		ABA213F42A78F64900A25E89 /* ReleaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReleaseCell.xib; sourceTree = "<group>"; };
+		ABA213F82A79001200A25E89 /* ReleaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseModel.swift; sourceTree = "<group>"; };
 		ABD2D1B22A73C3C0006343BB /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		ABECA5482A779E6600EADDD8 /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
 		CCE87CC4C975D10B57E01850 /* Pods-Explore Madiun iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Explore Madiun iOS.release.xcconfig"; path = "Target Support Files/Pods-Explore Madiun iOS/Pods-Explore Madiun iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +137,8 @@
 				AB5AF47D2A750AB4003CDB71 /* TabCell.swift */,
 				AB5AF47F2A750AF8003CDB71 /* TabsView.swift */,
 				AB8637342A761560001264C8 /* AboutPageViewController.swift */,
+				ABA213F32A78F64900A25E89 /* ReleaseCell.swift */,
+				ABA213F42A78F64900A25E89 /* ReleaseCell.xib */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 			children = (
 				AB06F2522A735D4B00A1A64C /* Widgets */,
 				AB6C9F382A72578400EFCB4D /* Menu */,
+				ABA213F72A78FFAB00A25E89 /* Models */,
 				AB11D2CB2A722690004B3E61 /* AppDelegate.swift */,
 				AB11D2CD2A722690004B3E61 /* SceneDelegate.swift */,
 				AB11D2CF2A722690004B3E61 /* SplashViewController.swift */,
@@ -206,6 +215,14 @@
 				AB37B5082A77ABB40001157F /* DetailGalleryViewController.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		ABA213F72A78FFAB00A25E89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABA213F82A79001200A25E89 /* ReleaseModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB074E0A2A74C64D008C2BBC /* GalleryCell.xib in Resources */,
+				ABA213F62A78F64900A25E89 /* ReleaseCell.xib in Resources */,
 				AB2A34BE2A73ABD800D4A3DD /* Lato-BlackItalic.ttf in Resources */,
 				AB2A34CA2A73AC1100D4A3DD /* Lato-ThinItalic.ttf in Resources */,
 				AB2A34BC2A73ABCD00D4A3DD /* Lato-Black.ttf in Resources */,
@@ -372,7 +390,9 @@
 				AB074E092A74C64D008C2BBC /* GalleryCell.swift in Sources */,
 				AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */,
 				AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */,
+				ABA213F92A79001200A25E89 /* ReleaseModel.swift in Sources */,
 				AB86373B2A7619F8001264C8 /* AboutThanksViewController.swift in Sources */,
+				ABA213F52A78F64900A25E89 /* ReleaseCell.swift in Sources */,
 				AB5AF4802A750AF8003CDB71 /* TabsView.swift in Sources */,
 				AB06F2552A735DB500A1A64C /* PlaceCell.swift in Sources */,
 			);
