@@ -49,6 +49,8 @@ extension ListPlaceViewController: UITableViewDataSource {
         }
         let imgUrl = URL(string: "https://lh3.googleusercontent.com/-VdGBzQkMOZI/VoHY6IZRcTI/AAAAAAAAB6I/V68FY5RlsgQ/s640-Ic42/alun_alun_madiun.jpg")
         cell.imageViewItemPlace.kf.setImage(with: imgUrl)
+        cell.labelName.text = "Waduk Widas"
+        cell.labelLocation.text = "Kabupaten Madiun"
         return cell
     }
     
