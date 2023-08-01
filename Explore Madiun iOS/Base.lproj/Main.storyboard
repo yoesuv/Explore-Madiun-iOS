@@ -578,9 +578,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmq-0R-SZk">
-                                <rect key="frame" x="160" y="395.66666666666669" width="55" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFJ-xr-m2h">
+                                <rect key="frame" x="10" y="60.000000000000007" width="355" height="19.333333333333336"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -588,10 +588,14 @@
                         <viewLayoutGuide key="safeArea" id="Dyh-nA-hZ1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Dmq-0R-SZk" firstAttribute="centerX" secondItem="xjB-HF-L3w" secondAttribute="centerX" id="Xks-8W-nuq"/>
-                            <constraint firstItem="Dmq-0R-SZk" firstAttribute="centerY" secondItem="xjB-HF-L3w" secondAttribute="centerY" id="dba-qs-RWA"/>
+                            <constraint firstItem="Dyh-nA-hZ1" firstAttribute="trailing" secondItem="jFJ-xr-m2h" secondAttribute="trailing" constant="10" id="Ypi-Wr-7pX"/>
+                            <constraint firstItem="jFJ-xr-m2h" firstAttribute="top" secondItem="Dyh-nA-hZ1" secondAttribute="top" constant="10" id="g0o-eD-MZE"/>
+                            <constraint firstItem="jFJ-xr-m2h" firstAttribute="leading" secondItem="Dyh-nA-hZ1" secondAttribute="leading" constant="10" id="rra-IS-7ok"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelThanks" destination="jFJ-xr-m2h" id="NVp-kp-LO2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Sw-A0-z7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
