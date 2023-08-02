@@ -32,6 +32,8 @@ class AboutChangelogViewController: UIViewController {
         self.tableViewRelease.layoutMargins = .zero
         self.tableViewRelease.directionalLayoutMargins = .zero
         self.tableViewRelease.showsVerticalScrollIndicator = false
+        self.tableViewRelease.estimatedRowHeight = 50
+        self.tableViewRelease.rowHeight = UITableView.automaticDimension
         
         self.tableViewRelease.dataSource = self
     }
