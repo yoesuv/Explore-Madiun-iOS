@@ -35,6 +35,8 @@
 		AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */; };
 		AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */; };
 		AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */; };
+		AB71C7692A7B37AB0086F1E5 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB71C7672A7B37AB0086F1E5 /* LibraryCell.swift */; };
+		AB71C76A2A7B37AB0086F1E5 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB71C7682A7B37AB0086F1E5 /* LibraryCell.xib */; };
 		AB8637352A761560001264C8 /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8637342A761560001264C8 /* AboutPageViewController.swift */; };
 		AB8637372A7618DA001264C8 /* AboutInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8637362A7618DA001264C8 /* AboutInformationViewController.swift */; };
 		AB8637392A761971001264C8 /* AboutChangelogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8637382A761971001264C8 /* AboutChangelogViewController.swift */; };
@@ -83,6 +85,8 @@
 		AB6C9F3B2A72583C00EFCB4D /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		AB6C9F3D2A7258C100EFCB4D /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		AB6C9F3F2A72597E00EFCB4D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		AB71C7672A7B37AB0086F1E5 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
+		AB71C7682A7B37AB0086F1E5 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		AB8637342A761560001264C8 /* AboutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
 		AB8637362A7618DA001264C8 /* AboutInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutInformationViewController.swift; sourceTree = "<group>"; };
 		AB8637382A761971001264C8 /* AboutChangelogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutChangelogViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				AB8637342A761560001264C8 /* AboutPageViewController.swift */,
 				ABA213F32A78F64900A25E89 /* ReleaseCell.swift */,
 				ABA213F42A78F64900A25E89 /* ReleaseCell.xib */,
+				AB71C7672A7B37AB0086F1E5 /* LibraryCell.swift */,
+				AB71C7682A7B37AB0086F1E5 /* LibraryCell.xib */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 				AB11D2D32A722690004B3E61 /* Main.storyboard in Resources */,
 				AB2A34C62A73ABFD00D4A3DD /* Lato-LightItalic.ttf in Resources */,
 				AB2A34BA2A73ABBC00D4A3DD /* Lato-Italic.ttf in Resources */,
+				AB71C76A2A7B37AB0086F1E5 /* LibraryCell.xib in Resources */,
 				AB2A34C02A73ABE100D4A3DD /* Lato-Bold.ttf in Resources */,
 				AB8698422A775D0100C4974D /* GoogleService-Info.plist in Resources */,
 				AB06F2562A735DB500A1A64C /* PlaceCell.xib in Resources */,
@@ -375,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB11D2D02A722690004B3E61 /* SplashViewController.swift in Sources */,
+				AB71C7692A7B37AB0086F1E5 /* LibraryCell.swift in Sources */,
 				AB11D2CC2A722690004B3E61 /* AppDelegate.swift in Sources */,
 				AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */,
 				AB8637392A761971001264C8 /* AboutChangelogViewController.swift in Sources */,
