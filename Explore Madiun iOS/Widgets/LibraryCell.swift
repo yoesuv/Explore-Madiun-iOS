@@ -9,6 +9,8 @@ import UIKit
 
 class LibraryCell: UITableViewCell {
     
+    static let identifier = "LibraryCell"
+    
     @IBOutlet weak var labelLibraryName: UILabel!
     
     override func awakeFromNib() {
