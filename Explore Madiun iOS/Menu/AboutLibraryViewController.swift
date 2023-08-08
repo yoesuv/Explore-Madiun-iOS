@@ -18,9 +18,9 @@ class AboutLibraryViewController: UIViewController {
         super.viewDidLoad()
         
         self.listLibrary.removeAll()
-        self.listLibrary.append(LibraryModel(id: 1, name: "Alamofire", link: "http", license: ""))
-        self.listLibrary.append(LibraryModel(id: 2, name: "Kingfisher", link: "http", license: ""))
-        self.listLibrary.append(LibraryModel(id: 3, name: "Lorem Ipsum", link: "http", license: ""))
+        self.listLibrary.append(LibraryModel(id: 1, name: "Alamofire", link: "https://cocoapods.org/pods/Alamofire", license: Constants.licenseMit))
+        self.listLibrary.append(LibraryModel(id: 2, name: "Kingfisher", link: "https://cocoapods.org/pods/Kingfisher", license: Constants.licenseMit))
+        self.listLibrary.append(LibraryModel(id: 3, name: "Lorem Ipsum", link: "https://cocoapods.org/pods/Kingfisher", license: Constants.licenseMit))
         
         setupTableLibrary()
     }
@@ -52,7 +52,9 @@ extension AboutLibraryViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         let data = listLibrary[indexPath.row]
+        cell.selectionStyle = .none
         cell.labelLibraryName.text = data.name
+        cell.labelLibraryLicense.text = data.license
         return cell
     }
     
