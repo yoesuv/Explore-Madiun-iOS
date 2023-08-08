@@ -22,12 +22,4 @@ class ChangelogCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        let vertical: CGFloat = 5
-        let horizontal: CGFloat = 10
-        let margins = UIEdgeInsets(top: vertical, left: horizontal, bottom: vertical, right: horizontal)
-        contentView.frame = contentView.frame.inset(by: margins)
-    }
-    
 }
