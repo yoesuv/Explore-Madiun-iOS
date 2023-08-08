@@ -29,6 +29,7 @@
 		AB2A34CA2A73AC1100D4A3DD /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34C92A73AC1100D4A3DD /* Lato-ThinItalic.ttf */; };
 		AB32A3EA2A811E1C009ED786 /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32A3E92A811E1C009ED786 /* LibraryModel.swift */; };
 		AB37AC4F2A81D21A004B0190 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37AC4E2A81D21A004B0190 /* Constants.swift */; };
+		AB37AC512A81E93D004B0190 /* Consola.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB37AC502A81E93D004B0190 /* Consola.ttf */; };
 		AB37B5092A77ABB40001157F /* DetailGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB37B5082A77ABB40001157F /* DetailGalleryViewController.swift */; };
 		AB5AF47E2A750AB4003CDB71 /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5AF47D2A750AB4003CDB71 /* TabCell.swift */; };
 		AB5AF4802A750AF8003CDB71 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5AF47F2A750AF8003CDB71 /* TabsView.swift */; };
@@ -81,6 +82,7 @@
 		AB2A34C92A73AC1100D4A3DD /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		AB32A3E92A811E1C009ED786 /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
 		AB37AC4E2A81D21A004B0190 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AB37AC502A81E93D004B0190 /* Consola.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Consola.ttf; sourceTree = "<group>"; };
 		AB37B5082A77ABB40001157F /* DetailGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGalleryViewController.swift; sourceTree = "<group>"; };
 		AB5AF47D2A750AB4003CDB71 /* TabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
 		AB5AF47F2A750AF8003CDB71 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		AB2A34B62A73AB3900D4A3DD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AB37AC502A81E93D004B0190 /* Consola.ttf */,
 				ABD2D1B22A73C3C0006343BB /* pacifico.ttf */,
 				AB2A34C12A73ABEB00D4A3DD /* Lato-BoldItalic.ttf */,
 				AB2A34BF2A73ABE100D4A3DD /* Lato-Bold.ttf */,
@@ -315,6 +318,7 @@
 				AB2A34C42A73ABF500D4A3DD /* Lato-Light.ttf in Resources */,
 				AB11D2D52A722691004B3E61 /* Assets.xcassets in Resources */,
 				AB2A34B82A73AB7900D4A3DD /* Lato-Regular.ttf in Resources */,
+				AB37AC512A81E93D004B0190 /* Consola.ttf in Resources */,
 				AB86506E2A778AA200B89924 /* keys.plist in Resources */,
 				AB11D2D32A722690004B3E61 /* Main.storyboard in Resources */,
 				AB2A34C62A73ABFD00D4A3DD /* Lato-LightItalic.ttf in Resources */,
