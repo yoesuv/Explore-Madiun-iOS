@@ -17,13 +17,18 @@ class LibraryCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let vertical: CGFloat = 5
+        let horizontal: CGFloat = 10
+        let margins = UIEdgeInsets(top: vertical, left: horizontal, bottom: vertical, right: horizontal)
+        contentView.frame = contentView.frame.inset(by: margins)
     }
     
 }
