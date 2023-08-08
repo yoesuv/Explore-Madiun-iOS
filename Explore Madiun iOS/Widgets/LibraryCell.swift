@@ -13,6 +13,7 @@ class LibraryCell: UITableViewCell {
     
     @IBOutlet weak var labelLibraryName: UILabel!
     @IBOutlet weak var labelLibraryLicense: UILabel!
+    @IBOutlet weak var labelLibraryLink: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

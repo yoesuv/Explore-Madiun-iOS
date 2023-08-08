@@ -55,6 +55,7 @@ extension AboutLibraryViewController: UITableViewDataSource {
         cell.selectionStyle = .none
         cell.labelLibraryName.text = data.name
         cell.labelLibraryLicense.text = data.license
+        cell.labelLibraryLink.text = data.link
         return cell
     }
     
