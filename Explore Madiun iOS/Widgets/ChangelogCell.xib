@@ -5,11 +5,15 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Lato-Bold.ttf">
             <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
         </array>
     </customFonts>
     <objects>
@@ -22,24 +26,52 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHI-Wb-D97">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHI-Wb-D97">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="21.666666666666668"/>
                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atd-tc-feN">
+                        <rect key="frame" x="0.0" y="21.666666666666664" width="320" height="65.333333333333343"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJM-Ud-IwQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="65.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nJM-Ud-IwQ" firstAttribute="top" secondItem="atd-tc-feN" secondAttribute="top" id="349-Rf-0TO"/>
+                            <constraint firstItem="nJM-Ud-IwQ" firstAttribute="leading" secondItem="atd-tc-feN" secondAttribute="leading" id="Pbe-ar-Y6L"/>
+                            <constraint firstAttribute="bottom" secondItem="nJM-Ud-IwQ" secondAttribute="bottom" id="Rmb-u6-4Bf"/>
+                            <constraint firstAttribute="trailing" secondItem="nJM-Ud-IwQ" secondAttribute="trailing" id="cnZ-EV-Lbk"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="atd-tc-feN" secondAttribute="trailing" id="9qI-p0-dE6"/>
                     <constraint firstAttribute="trailing" secondItem="RHI-Wb-D97" secondAttribute="trailing" id="CF7-Vu-1bZ"/>
                     <constraint firstItem="RHI-Wb-D97" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jeb-sv-9cH"/>
+                    <constraint firstItem="atd-tc-feN" firstAttribute="top" secondItem="RHI-Wb-D97" secondAttribute="bottom" id="QgX-hi-cjd"/>
                     <constraint firstItem="RHI-Wb-D97" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Zey-AK-Ia6"/>
+                    <constraint firstItem="atd-tc-feN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nS6-5r-ItY"/>
+                    <constraint firstAttribute="bottom" secondItem="atd-tc-feN" secondAttribute="bottom" id="sWC-ig-dkK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="labelChangelogInformation" destination="nJM-Ud-IwQ" id="2M2-dX-FPC"/>
                 <outlet property="labelChangelogVersion" destination="RHI-Wb-D97" id="EVM-v1-lvy"/>
             </connections>
             <point key="canvasLocation" x="-96.18320610687023" y="3.8732394366197185"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

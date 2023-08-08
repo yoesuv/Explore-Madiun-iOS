@@ -19,7 +19,7 @@ class AboutChangelogViewController: UIViewController {
         
         listRelease.removeAll()
         listRelease.append(ReleaseModel(id: 1, version: "Version 1.0.0", information: "Lorem Ipsum Dolor Amit"))
-        listRelease.append(ReleaseModel(id: 2, version: "Version 1.0.1", information: "Lorem Ipsum Dolor Amit Lorem Ipsum Dolor Amit Lorem Ipsum Dolor Amit"))
+        listRelease.append(ReleaseModel(id: 2, version: "Version 1.0.1", information: "Lorem Ipsum Dolor Amit Lorem Ipsum \nDolor Amit Lorem Ipsum Dolor Amit"))
         listRelease.append(ReleaseModel(id: 3, version: "Version 1.0.2", information: "Lorem Ipsum Dolor Amit"))
         
         setupTableRelease()
@@ -32,7 +32,7 @@ class AboutChangelogViewController: UIViewController {
         self.tableViewRelease.layoutMargins = .zero
         self.tableViewRelease.directionalLayoutMargins = .zero
         self.tableViewRelease.showsVerticalScrollIndicator = false
-        self.tableViewRelease.estimatedRowHeight = 50
+        self.tableViewRelease.estimatedRowHeight = 100
         self.tableViewRelease.rowHeight = UITableView.automaticDimension
         
         self.tableViewRelease.dataSource = self
@@ -54,6 +54,7 @@ extension AboutChangelogViewController: UITableViewDataSource {
         let data = listRelease[indexPath.row]
         cell.selectionStyle = .none
         cell.labelChangelogVersion.text = data.version
+        cell.labelChangelogInformation.text = data.information
         return cell
     }
     
