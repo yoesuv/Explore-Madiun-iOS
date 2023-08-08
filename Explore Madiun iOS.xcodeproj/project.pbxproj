@@ -47,6 +47,8 @@
 		AB86373D2A761AB3001264C8 /* AboutLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */; };
 		AB86506E2A778AA200B89924 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB86506D2A778AA200B89924 /* keys.plist */; };
 		AB8698422A775D0100C4974D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB8698412A775D0100C4974D /* GoogleService-Info.plist */; };
+		AB88DF772A81F93F004B385E /* ChangelogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB88DF752A81F93F004B385E /* ChangelogCell.swift */; };
+		AB88DF782A81F93F004B385E /* ChangelogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB88DF762A81F93F004B385E /* ChangelogCell.xib */; };
 		ABA213F52A78F64900A25E89 /* ReleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA213F32A78F64900A25E89 /* ReleaseCell.swift */; };
 		ABA213F62A78F64900A25E89 /* ReleaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA213F42A78F64900A25E89 /* ReleaseCell.xib */; };
 		ABA213F92A79001200A25E89 /* ReleaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA213F82A79001200A25E89 /* ReleaseModel.swift */; };
@@ -100,6 +102,8 @@
 		AB86373C2A761AB3001264C8 /* AboutLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutLibraryViewController.swift; sourceTree = "<group>"; };
 		AB86506D2A778AA200B89924 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		AB8698412A775D0100C4974D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB88DF752A81F93F004B385E /* ChangelogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelogCell.swift; sourceTree = "<group>"; };
+		AB88DF762A81F93F004B385E /* ChangelogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangelogCell.xib; sourceTree = "<group>"; };
 		ABA213F32A78F64900A25E89 /* ReleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseCell.swift; sourceTree = "<group>"; };
 		ABA213F42A78F64900A25E89 /* ReleaseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReleaseCell.xib; sourceTree = "<group>"; };
 		ABA213F82A79001200A25E89 /* ReleaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseModel.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				ABA213F42A78F64900A25E89 /* ReleaseCell.xib */,
 				AB71C7672A7B37AB0086F1E5 /* LibraryCell.swift */,
 				AB71C7682A7B37AB0086F1E5 /* LibraryCell.xib */,
+				AB88DF752A81F93F004B385E /* ChangelogCell.swift */,
+				AB88DF762A81F93F004B385E /* ChangelogCell.xib */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				AB06F2562A735DB500A1A64C /* PlaceCell.xib in Resources */,
 				ABD2D1B32A73C3C0006343BB /* pacifico.ttf in Resources */,
 				AB2A34C22A73ABEB00D4A3DD /* Lato-BoldItalic.ttf in Resources */,
+				AB88DF782A81F93F004B385E /* ChangelogCell.xib in Resources */,
 				AB2A34C82A73AC0700D4A3DD /* Lato-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB11D2D02A722690004B3E61 /* SplashViewController.swift in Sources */,
+				AB88DF772A81F93F004B385E /* ChangelogCell.swift in Sources */,
 				AB71C7692A7B37AB0086F1E5 /* LibraryCell.swift in Sources */,
 				AB11D2CC2A722690004B3E61 /* AppDelegate.swift in Sources */,
 				AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */,

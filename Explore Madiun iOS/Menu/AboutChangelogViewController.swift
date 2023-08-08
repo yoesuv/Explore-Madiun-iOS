@@ -26,8 +26,8 @@ class AboutChangelogViewController: UIViewController {
     }
     
     private func setupTableRelease() {
-        let nib = UINib(nibName: "ReleaseCell", bundle: nil)
-        self.tableViewRelease.register(nib, forCellReuseIdentifier: ReleaseCell.identifier)
+        let nib = UINib(nibName: "ChangelogCell", bundle: nil)
+        self.tableViewRelease.register(nib, forCellReuseIdentifier: ChangelogCell.identifier)
         self.tableViewRelease.separatorInset = .zero
         self.tableViewRelease.layoutMargins = .zero
         self.tableViewRelease.directionalLayoutMargins = .zero
@@ -47,13 +47,13 @@ extension AboutChangelogViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let id = ReleaseCell.identifier
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: id, for: indexPath) as? ReleaseCell else {
+        let id = ChangelogCell.identifier
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: id, for: indexPath) as? ChangelogCell else {
             return UITableViewCell()
         }
         let data = listRelease[indexPath.row]
-        cell.labelReleaseVersion.text = data.version
-        cell.labelReleaseInfo.text = data.information
+        cell.selectionStyle = .none
+        cell.labelChangelogVersion.text = data.version
         return cell
     }
     
