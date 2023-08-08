@@ -26,26 +26,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHI-Wb-D97">
-                        <rect key="frame" x="0.0" y="0.0" width="340" height="21.666666666666668"/>
+                        <rect key="frame" x="10" y="5" width="320" height="21.666666666666668"/>
                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJM-Ud-IwQ">
-                        <rect key="frame" x="0.0" y="21.666666666666664" width="340" height="103.33333333333334"/>
+                        <rect key="frame" x="10" y="26.666666666666664" width="320" height="93.333333333333343"/>
                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="nJM-Ud-IwQ" secondAttribute="trailing" id="38a-kh-lSj"/>
-                    <constraint firstAttribute="bottom" secondItem="nJM-Ud-IwQ" secondAttribute="bottom" id="At8-eF-dl3"/>
-                    <constraint firstItem="nJM-Ud-IwQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HZD-j7-mtQ"/>
+                    <constraint firstAttribute="trailing" secondItem="nJM-Ud-IwQ" secondAttribute="trailing" constant="10" id="38a-kh-lSj"/>
+                    <constraint firstAttribute="bottom" secondItem="nJM-Ud-IwQ" secondAttribute="bottom" constant="5" id="At8-eF-dl3"/>
+                    <constraint firstItem="nJM-Ud-IwQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="HZD-j7-mtQ"/>
                     <constraint firstItem="nJM-Ud-IwQ" firstAttribute="top" secondItem="RHI-Wb-D97" secondAttribute="bottom" id="LPc-S4-ksR"/>
-                    <constraint firstAttribute="trailing" secondItem="RHI-Wb-D97" secondAttribute="trailing" id="SYP-yc-CsV"/>
-                    <constraint firstItem="RHI-Wb-D97" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gM5-AL-moG"/>
-                    <constraint firstItem="RHI-Wb-D97" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kNi-0s-NlL"/>
+                    <constraint firstAttribute="trailing" secondItem="RHI-Wb-D97" secondAttribute="trailing" constant="10" id="SYP-yc-CsV"/>
+                    <constraint firstItem="RHI-Wb-D97" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="gM5-AL-moG"/>
+                    <constraint firstItem="RHI-Wb-D97" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="kNi-0s-NlL"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
