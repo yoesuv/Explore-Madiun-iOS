@@ -10,5 +10,6 @@ target 'Explore Madiun iOS' do
   pod 'FirebaseCore', '~> 10.12.0'
   pod 'FirebaseAnalytics', '~> 10.12.0'
   pod 'Google-Maps-iOS-Utils', '~> 4.2.2'
+  pod 'Alamofire', '~> 5.7.1'
 
 end
