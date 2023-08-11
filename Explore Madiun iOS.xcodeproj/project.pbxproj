@@ -49,6 +49,10 @@
 		AB8698422A775D0100C4974D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB8698412A775D0100C4974D /* GoogleService-Info.plist */; };
 		AB88DF772A81F93F004B385E /* ChangelogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB88DF752A81F93F004B385E /* ChangelogCell.swift */; };
 		AB88DF782A81F93F004B385E /* ChangelogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB88DF762A81F93F004B385E /* ChangelogCell.xib */; };
+		AB89DB472A8680FB0005E7EE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89DB462A8680FB0005E7EE /* NetworkService.swift */; };
+		AB89DB492A8681290005E7EE /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89DB482A8681290005E7EE /* PlaceModel.swift */; };
+		AB89DB4B2A8682070005E7EE /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89DB4A2A8682070005E7EE /* GalleryModel.swift */; };
+		AB89DB4D2A86822E0005E7EE /* PinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89DB4C2A86822E0005E7EE /* PinModel.swift */; };
 		ABA213F92A79001200A25E89 /* ReleaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA213F82A79001200A25E89 /* ReleaseModel.swift */; };
 		ABD2D1B32A73C3C0006343BB /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD2D1B22A73C3C0006343BB /* pacifico.ttf */; };
 		ABECA5492A779E6600EADDD8 /* DetailPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECA5482A779E6600EADDD8 /* DetailPlaceViewController.swift */; };
@@ -102,6 +106,10 @@
 		AB8698412A775D0100C4974D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB88DF752A81F93F004B385E /* ChangelogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelogCell.swift; sourceTree = "<group>"; };
 		AB88DF762A81F93F004B385E /* ChangelogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangelogCell.xib; sourceTree = "<group>"; };
+		AB89DB462A8680FB0005E7EE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AB89DB482A8681290005E7EE /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		AB89DB4A2A8682070005E7EE /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
+		AB89DB4C2A86822E0005E7EE /* PinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinModel.swift; sourceTree = "<group>"; };
 		ABA213F82A79001200A25E89 /* ReleaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseModel.swift; sourceTree = "<group>"; };
 		ABD2D1B22A73C3C0006343BB /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		ABECA5482A779E6600EADDD8 /* DetailPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlaceViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +185,7 @@
 		AB11D2CA2A722690004B3E61 /* Explore Madiun iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AB89DB452A8680BE0005E7EE /* Services */,
 				AB37AC4D2A81D203004B0190 /* Data */,
 				AB06F2522A735D4B00A1A64C /* Widgets */,
 				AB6C9F382A72578400EFCB4D /* Menu */,
@@ -239,11 +248,22 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		AB89DB452A8680BE0005E7EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB89DB462A8680FB0005E7EE /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		ABA213F72A78FFAB00A25E89 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				ABA213F82A79001200A25E89 /* ReleaseModel.swift */,
 				AB32A3E92A811E1C009ED786 /* LibraryModel.swift */,
+				AB89DB482A8681290005E7EE /* PlaceModel.swift */,
+				AB89DB4A2A8682070005E7EE /* GalleryModel.swift */,
+				AB89DB4C2A86822E0005E7EE /* PinModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -400,10 +420,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB11D2D02A722690004B3E61 /* SplashViewController.swift in Sources */,
+				AB89DB4B2A8682070005E7EE /* GalleryModel.swift in Sources */,
 				AB88DF772A81F93F004B385E /* ChangelogCell.swift in Sources */,
 				AB71C7692A7B37AB0086F1E5 /* LibraryCell.swift in Sources */,
+				AB89DB492A8681290005E7EE /* PlaceModel.swift in Sources */,
 				AB11D2CC2A722690004B3E61 /* AppDelegate.swift in Sources */,
 				AB6C9F3E2A7258C100EFCB4D /* MapsViewController.swift in Sources */,
+				AB89DB472A8680FB0005E7EE /* NetworkService.swift in Sources */,
 				AB8637392A761971001264C8 /* AboutChangelogViewController.swift in Sources */,
 				AB5AF47E2A750AB4003CDB71 /* TabCell.swift in Sources */,
 				AB37B5092A77ABB40001157F /* DetailGalleryViewController.swift in Sources */,
@@ -417,6 +440,7 @@
 				AB32A3EA2A811E1C009ED786 /* LibraryModel.swift in Sources */,
 				AB074E092A74C64D008C2BBC /* GalleryCell.swift in Sources */,
 				AB6C9F402A72597E00EFCB4D /* AboutViewController.swift in Sources */,
+				AB89DB4D2A86822E0005E7EE /* PinModel.swift in Sources */,
 				AB6C9F372A72538D00EFCB4D /* HomeViewController.swift in Sources */,
 				ABA213F92A79001200A25E89 /* ReleaseModel.swift in Sources */,
 				AB86373B2A7619F8001264C8 /* AboutThanksViewController.swift in Sources */,
