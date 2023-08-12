@@ -63,7 +63,7 @@ extension ListPlaceViewController: UITableViewDataSource {
         }
         let dt = listPlace[indexPath.row]
         let imgUrl = URL(string: dt.gambar ?? "")
-        cell.imageViewItemPlace.kf.setImage(with: imgUrl)
+        cell.imageViewItemPlace.kf.setImage(with: imgUrl, placeholder: UIImage(named: "ImagePlaceholder"))
         cell.labelName.text = dt.nama
         cell.labelLocation.text = dt.lokasi
         return cell
