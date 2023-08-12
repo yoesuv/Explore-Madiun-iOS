@@ -14,6 +14,15 @@ class ListPlaceViewController: UIViewController {
     
     private let service = NetworkService()
     private var listPlace: [PlaceModel] = []
+    private var placeModel: PlaceModel?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ListPlaceToDetail" {
+            if let detailViewController = segue.destination as? DetailPlaceViewController {
+                detailViewController.place = placeModel
+            }
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.title = "List Place"
@@ -74,6 +83,7 @@ extension ListPlaceViewController: UITableViewDataSource {
 extension ListPlaceViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.placeModel = listPlace[indexPath.row]
         self.performSegue(withIdentifier: "ListPlaceToDetail", sender: self)
     }
     
