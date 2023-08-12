@@ -12,6 +12,18 @@ class ListPlaceViewController: UIViewController {
     
     @IBOutlet weak var tableViewListPlace: UITableView!
     
+    private let service = NetworkService()
+    private var listPlace: [PlaceModel] = []
+    private var placeModel: PlaceModel?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ListPlaceToDetail" {
+            if let detailViewController = segue.destination as? DetailPlaceViewController {
+                detailViewController.place = placeModel
+            }
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.title = "List Place"
     }
@@ -20,6 +32,7 @@ class ListPlaceViewController: UIViewController {
         super.viewDidLoad()
         
         setupTableView()
+        requestData()
     }
     
     private func setupTableView() {
@@ -34,23 +47,34 @@ class ListPlaceViewController: UIViewController {
         tableViewListPlace.delegate = self
     }
     
+    private func requestData() {
+        service.fetchPlaces(result: { response in
+            self.listPlace.removeAll()
+            if response.error == nil {
+                self.listPlace = response.value ?? []
+            }
+            self.tableViewListPlace.reloadData()
+         })
+    }
+    
 }
 
 
 extension ListPlaceViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return listPlace.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CellPlace", for: indexPath) as? PlaceCell else {
             return UITableViewCell()
         }
-        let imgUrl = URL(string: "https://lh3.googleusercontent.com/-VdGBzQkMOZI/VoHY6IZRcTI/AAAAAAAAB6I/V68FY5RlsgQ/s640-Ic42/alun_alun_madiun.jpg")
-        cell.imageViewItemPlace.kf.setImage(with: imgUrl)
-        cell.labelName.text = "Waduk Widas"
-        cell.labelLocation.text = "Kabupaten Madiun"
+        let dt = listPlace[indexPath.row]
+        let imgUrl = URL(string: dt.gambar ?? "")
+        cell.imageViewItemPlace.kf.setImage(with: imgUrl, placeholder: UIImage(named: "ImagePlaceholder"))
+        cell.labelName.text = dt.nama
+        cell.labelLocation.text = dt.lokasi
         return cell
     }
     
@@ -59,6 +83,7 @@ extension ListPlaceViewController: UITableViewDataSource {
 extension ListPlaceViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.placeModel = listPlace[indexPath.row]
         self.performSegue(withIdentifier: "ListPlaceToDetail", sender: self)
     }
     

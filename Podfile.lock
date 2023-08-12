@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.7.1)
   - FirebaseAnalytics (10.12.0):
     - FirebaseAnalytics/AdIdSupport (= 10.12.0)
     - FirebaseCore (~> 10.0)
@@ -100,6 +101,7 @@ PODS:
   - PromisesObjC (2.3.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.7.1)
   - FirebaseAnalytics (~> 10.12.0)
   - FirebaseCore (~> 10.12.0)
   - Google-Maps-iOS-Utils (~> 4.2.2)
@@ -107,6 +109,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreInternal
@@ -120,6 +123,7 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
   FirebaseAnalytics: 0270389efbe3022b54ec4588862dabec3477ee98
   FirebaseCore: f86a1394906b97ac445ae49c92552a9425831bed
   FirebaseCoreInternal: 950500ad8a08963657f6d8c67b579740c06d6aa1
@@ -132,6 +136,6 @@ SPEC CHECKSUMS:
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
 
-PODFILE CHECKSUM: 1a45754db5587b24607370d465c8f9ee08b9cae4
+PODFILE CHECKSUM: a534a446845612497f47cc21e2e531546aa71dde
 
 COCOAPODS: 1.12.1

@@ -13,6 +13,17 @@ class GalleryViewController: UIViewController {
     @IBOutlet weak var collectionViewGallery: UICollectionView!
     
     let layout = UICollectionViewFlowLayout()
+    private let service = NetworkService()
+    private var galleries: [GalleryModel] = []
+    private var gallery: GalleryModel?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GalleryToDetail" {
+            if let detailViewController = segue.destination as? DetailGalleryViewController {
+                detailViewController.gallery = gallery
+            }
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.title = "Gallery"
@@ -22,6 +33,7 @@ class GalleryViewController: UIViewController {
         super.viewDidLoad()
         
         setupCollectionView()
+        requestData()
     }
     
     private func setupCollectionView() {
@@ -37,12 +49,23 @@ class GalleryViewController: UIViewController {
         self.collectionViewGallery.delegate = self
         self.collectionViewGallery.showsVerticalScrollIndicator = false
     }
+    
+    private func requestData() {
+        service.fetchGalleries(result: { response in
+            self.galleries.removeAll()
+            if response.error == nil {
+                self.galleries = response.value ?? []
+            }
+            self.collectionViewGallery.reloadData()
+        })
+    }
 
 }
 
 extension GalleryViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.gallery = galleries[indexPath.row]
         self.performSegue(withIdentifier: "GalleryToDetail", sender: self)
     }
     
@@ -58,15 +81,16 @@ extension GalleryViewController: UICollectionViewDelegateFlowLayout {
 
 extension GalleryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return galleries.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GalleryCell.identifier, for: indexPath) as? GalleryCell else {
             return UICollectionViewCell()
         }
-        let imgUrl = URL(string: "https://lh3.googleusercontent.com/-VdGBzQkMOZI/VoHY6IZRcTI/AAAAAAAAB6I/V68FY5RlsgQ/s640-Ic42/alun_alun_madiun.jpg")
-        cell.imageViewGallery.kf.setImage(with: imgUrl)
+        let data = galleries[indexPath.row]
+        let imgUrl = URL(string: data.thumbnail ?? "")
+        cell.imageViewGallery.kf.setImage(with: imgUrl, placeholder: UIImage(named: "ImagePlaceholder"))
         return cell
     }
 }
