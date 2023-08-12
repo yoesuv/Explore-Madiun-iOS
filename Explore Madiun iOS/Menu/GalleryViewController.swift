@@ -15,6 +15,15 @@ class GalleryViewController: UIViewController {
     let layout = UICollectionViewFlowLayout()
     private let service = NetworkService()
     private var galleries: [GalleryModel] = []
+    private var gallery: GalleryModel?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GalleryToDetail" {
+            if let detailViewController = segue.destination as? DetailGalleryViewController {
+                detailViewController.gallery = gallery
+            }
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.title = "Gallery"
@@ -56,6 +65,7 @@ class GalleryViewController: UIViewController {
 extension GalleryViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.gallery = galleries[indexPath.row]
         self.performSegue(withIdentifier: "GalleryToDetail", sender: self)
     }
     
