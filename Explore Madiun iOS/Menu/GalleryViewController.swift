@@ -26,6 +26,7 @@ class GalleryViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.tabBarController?.navigationItem.title = "Gallery"
     }
 
@@ -51,7 +52,9 @@ class GalleryViewController: UIViewController {
     }
     
     private func requestData() {
+        LoadingOverlay.shared.showOverlay(view: self.navigationController?.view, text: "Loading Gallery")
         service.fetchGalleries(result: { response in
+            LoadingOverlay.shared.hideOverlayView()
             self.galleries.removeAll()
             if response.error == nil {
                 self.galleries = response.value ?? []

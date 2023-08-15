@@ -25,6 +25,7 @@ class ListPlaceViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.tabBarController?.navigationItem.title = "List Place"
     }
     
@@ -48,7 +49,9 @@ class ListPlaceViewController: UIViewController {
     }
     
     private func requestData() {
+        LoadingOverlay.shared.showOverlay(view: self.navigationController?.view, text: "Loading List Place")
         service.fetchPlaces(result: { response in
+            LoadingOverlay.shared.hideOverlayView()
             self.listPlace.removeAll()
             if response.error == nil {
                 self.listPlace = response.value ?? []
