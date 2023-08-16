@@ -17,6 +17,7 @@
 		AB11D2D32A722690004B3E61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB11D2D12A722690004B3E61 /* Main.storyboard */; };
 		AB11D2D52A722691004B3E61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB11D2D42A722691004B3E61 /* Assets.xcassets */; };
 		AB11D2D82A722691004B3E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB11D2D62A722691004B3E61 /* LaunchScreen.storyboard */; };
+		AB2713E42A8BB11700732A1C /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2713E32A8BB11700732A1C /* LoadingOverlay.swift */; };
 		AB2A34B82A73AB7900D4A3DD /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34B72A73AB7900D4A3DD /* Lato-Regular.ttf */; };
 		AB2A34BA2A73ABBC00D4A3DD /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34B92A73ABBC00D4A3DD /* Lato-Italic.ttf */; };
 		AB2A34BC2A73ABCD00D4A3DD /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2A34BB2A73ABCD00D4A3DD /* Lato-Black.ttf */; };
@@ -74,6 +75,7 @@
 		AB11D2D42A722691004B3E61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB11D2D72A722691004B3E61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB11D2D92A722691004B3E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2713E32A8BB11700732A1C /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		AB2A34B72A73AB7900D4A3DD /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		AB2A34B92A73ABBC00D4A3DD /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
 		AB2A34BB2A73ABCD00D4A3DD /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				AB71C7682A7B37AB0086F1E5 /* LibraryCell.xib */,
 				AB88DF752A81F93F004B385E /* ChangelogCell.swift */,
 				AB88DF762A81F93F004B385E /* ChangelogCell.xib */,
+				AB2713E32A8BB11700732A1C /* LoadingOverlay.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				AB8637352A761560001264C8 /* AboutPageViewController.swift in Sources */,
 				AB6C9F3C2A72583C00EFCB4D /* GalleryViewController.swift in Sources */,
 				AB8637372A7618DA001264C8 /* AboutInformationViewController.swift in Sources */,
+				AB2713E42A8BB11700732A1C /* LoadingOverlay.swift in Sources */,
 				AB6C9F3A2A7257A400EFCB4D /* ListPlaceViewController.swift in Sources */,
 				AB86373D2A761AB3001264C8 /* AboutLibraryViewController.swift in Sources */,
 				AB32A3EA2A811E1C009ED786 /* LibraryModel.swift in Sources */,

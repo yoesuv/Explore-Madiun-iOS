@@ -18,9 +18,11 @@ class AboutLibraryViewController: UIViewController {
         super.viewDidLoad()
         
         self.listLibrary.removeAll()
-        self.listLibrary.append(LibraryModel(id: 1, name: "Alamofire", link: "https://cocoapods.org/pods/Alamofire", license: Constants.licenseMit))
-        self.listLibrary.append(LibraryModel(id: 2, name: "Kingfisher", link: "https://cocoapods.org/pods/Kingfisher", license: Constants.licenseMit))
-        self.listLibrary.append(LibraryModel(id: 3, name: "Lorem Ipsum", link: "https://cocoapods.org/pods/Kingfisher", license: Constants.licenseMit))
+        self.listLibrary.append(LibraryModel(id: 1, name: "Cocoapods", link: "https://cocoapods.org", license: Constants.licenseMit))
+        self.listLibrary.append(LibraryModel(id: 2, name: "Alamofire", link: "https://cocoapods.org/pods/Alamofire", license: Constants.licenseMit))
+        self.listLibrary.append(LibraryModel(id: 3, name: "Firebase Analytics", link: "https://cocoapods.org/pods/FirebaseAnalytics", license: Constants.licenseApache))
+        self.listLibrary.append(LibraryModel(id: 4, name: "Firebase Core", link: "https://cocoapods.org/pods/FirebaseCore", license: Constants.licenseApache))
+        self.listLibrary.append(LibraryModel(id: 5, name: "Kingfisher", link: "https://cocoapods.org/pods/Kingfisher", license: Constants.licenseMit))
         
         setupTableLibrary()
     }
