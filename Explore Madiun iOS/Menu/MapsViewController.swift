@@ -16,6 +16,12 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.title = "Maps"
+        let reload = UIBarButtonItem(image: UIImage(systemName: "repeat.circle"), style: .plain, target: self, action: #selector(reloadMaps))
+        self.tabBarController?.navigationItem.rightBarButtonItems = [reload]
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.setRightBarButton(nil, animated: true)
     }
 
     override func viewDidLoad() {
@@ -29,6 +35,11 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
         self.mapView.settings.compassButton = true
         self.mapView.delegate = self
         self.view = mapView
+    }
+    
+    @objc private func reloadMaps() {
+        let camera = GMSCameraPosition.camera(withLatitude: -7.689211, longitude: 111.345548, zoom: 9)
+        self.mapView.animate(to: camera)
     }
     
     
