@@ -22,7 +22,8 @@ class AboutLibraryViewController: UIViewController {
         self.listLibrary.append(LibraryModel(id: 2, name: "Alamofire", link: "https://cocoapods.org/pods/Alamofire", license: Constants.licenseMit))
         self.listLibrary.append(LibraryModel(id: 3, name: "Firebase Analytics", link: "https://cocoapods.org/pods/FirebaseAnalytics", license: Constants.licenseApache))
         self.listLibrary.append(LibraryModel(id: 4, name: "Firebase Core", link: "https://cocoapods.org/pods/FirebaseCore", license: Constants.licenseApache))
-        self.listLibrary.append(LibraryModel(id: 5, name: "Kingfisher", link: "https://cocoapods.org/pods/Kingfisher", license: Constants.licenseMit))
+        self.listLibrary.append(LibraryModel(id: 5, name: "Google Maps", link: "https://cocoapods.org/pods/Google-Maps-iOS-Utils", license: Constants.licenseApache))
+        self.listLibrary.append(LibraryModel(id: 6, name: "Kingfisher", link: "https://cocoapods.org/pods/Kingfisher", license: Constants.licenseMit))
         
         setupTableLibrary()
     }
