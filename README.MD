@@ -3,7 +3,7 @@
 <details>
 <summary>Build with classic storyboard.</summary>
 ![](https://images2.imgbox.com/d1/77/y1r6CZNw_o.png)
-<details>
+</details>
 
 #### How to run/build this project ####
 - in project directory run `pod install`
