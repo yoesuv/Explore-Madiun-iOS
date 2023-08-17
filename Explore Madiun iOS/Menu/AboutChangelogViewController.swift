@@ -18,9 +18,7 @@ class AboutChangelogViewController: UIViewController {
         super.viewDidLoad()
         
         listRelease.removeAll()
-        listRelease.append(ReleaseModel(id: 1, version: "Version 1.0.0", information: "Lorem Ipsum Dolor Amit"))
-        listRelease.append(ReleaseModel(id: 2, version: "Version 1.0.1", information: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."))
-        listRelease.append(ReleaseModel(id: 3, version: "Version 1.0.2", information: "Lorem Ipsum Dolor Amit"))
+        listRelease.append(ReleaseModel(id: 1, version: "Version 1.0.0", information: "• initial release"))
         
         setupTableRelease()
     }
