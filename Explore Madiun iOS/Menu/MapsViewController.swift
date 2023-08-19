@@ -16,6 +16,7 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
     private var pins:[PinModel] = []
     
     private let locationManager = CLLocationManager()
+    private let cameraDefault = GMSCameraPosition.camera(withLatitude: -7.689211, longitude: 111.345548, zoom: 9)
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.title = "Maps"
@@ -26,7 +27,7 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         self.tabBarController?.navigationItem.setRightBarButton(nil, animated: true)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         requestData()
@@ -34,18 +35,15 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
     }
     
     override func loadView() {
-        let camera = GMSCameraPosition.camera(withLatitude: -7.689211, longitude: 111.345548, zoom: 9)
-        self.mapView = GMSMapView(frame: .zero, camera: camera)
+        self.mapView = GMSMapView(frame: .zero, camera: cameraDefault)
         self.mapView.settings.compassButton = true
         self.mapView.delegate = self
         self.view = mapView
     }
     
     @objc private func reloadMaps() {
-        let camera = GMSCameraPosition.camera(withLatitude: -7.689211, longitude: 111.345548, zoom: 9)
-        self.mapView.animate(to: camera)
+        self.mapView.animate(to: cameraDefault)
     }
-    
     
     private func requestData() {
         self.mapView.clear()
@@ -85,12 +83,16 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
         case .denied, .restricted:
             print("MapsViewController # DENIED or RESTRICTED")
         case .authorizedWhenInUse, .authorizedAlways:
+            DispatchQueue.main.async {
+                self.mapView.isMyLocationEnabled = true
+                self.mapView.settings.myLocationButton = true
+            }
             locationManager.startUpdatingLocation()
         default:
             print("MapsViewController # DEFAULT")
         }
     }
-
+    
 }
 
 extension MapsViewController: CLLocationManagerDelegate {
