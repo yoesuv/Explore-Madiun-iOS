@@ -7,12 +7,15 @@
 
 import UIKit
 import GoogleMaps
+import CoreLocation
 
 class MapsViewController: UIViewController, GMSMapViewDelegate {
     
     private var mapView: GMSMapView!
     private let service = NetworkService()
     private var pins:[PinModel] = []
+    
+    private let locationManager = CLLocationManager()
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.title = "Maps"
@@ -27,6 +30,7 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         requestData()
+        checkServiceLocation()
     }
     
     override func loadView() {
@@ -64,5 +68,43 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
             marker.map = self.mapView
         }
     }
+    
+    private func checkServiceLocation() {
+        DispatchQueue.global().async {
+            if CLLocationManager.locationServicesEnabled() {
+                self.locationManager.delegate = self
+                self.setupPermissionLocation()
+            }
+        }
+    }
+    
+    private func setupPermissionLocation() {
+        switch locationManager.authorizationStatus {
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .denied, .restricted:
+            print("MapsViewController # DENIED or RESTRICTED")
+        case .authorizedWhenInUse, .authorizedAlways:
+            locationManager.startUpdatingLocation()
+        default:
+            print("MapsViewController # DEFAULT")
+        }
+    }
 
+}
+
+extension MapsViewController: CLLocationManagerDelegate {
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        self.checkServiceLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            let lat = location.coordinate.latitude
+            let lng = location.coordinate.longitude
+            print("MapsViewController # \(lat),\(lng)")
+        }
+    }
+    
 }
