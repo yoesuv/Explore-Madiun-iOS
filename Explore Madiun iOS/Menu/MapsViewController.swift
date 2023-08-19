@@ -7,12 +7,16 @@
 
 import UIKit
 import GoogleMaps
+import CoreLocation
 
 class MapsViewController: UIViewController, GMSMapViewDelegate {
     
     private var mapView: GMSMapView!
     private let service = NetworkService()
     private var pins:[PinModel] = []
+    
+    private let locationManager = CLLocationManager()
+    private let cameraDefault = GMSCameraPosition.camera(withLatitude: -7.689211, longitude: 111.345548, zoom: 9)
     
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.navigationItem.title = "Maps"
@@ -23,25 +27,23 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         self.tabBarController?.navigationItem.setRightBarButton(nil, animated: true)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         requestData()
+        checkServiceLocation()
     }
     
     override func loadView() {
-        let camera = GMSCameraPosition.camera(withLatitude: -7.689211, longitude: 111.345548, zoom: 9)
-        self.mapView = GMSMapView(frame: .zero, camera: camera)
+        self.mapView = GMSMapView(frame: .zero, camera: cameraDefault)
         self.mapView.settings.compassButton = true
         self.mapView.delegate = self
         self.view = mapView
     }
     
     @objc private func reloadMaps() {
-        let camera = GMSCameraPosition.camera(withLatitude: -7.689211, longitude: 111.345548, zoom: 9)
-        self.mapView.animate(to: camera)
+        self.mapView.animate(to: cameraDefault)
     }
-    
     
     private func requestData() {
         self.mapView.clear()
@@ -64,5 +66,47 @@ class MapsViewController: UIViewController, GMSMapViewDelegate {
             marker.map = self.mapView
         }
     }
+    
+    private func checkServiceLocation() {
+        DispatchQueue.global().async {
+            if CLLocationManager.locationServicesEnabled() {
+                self.locationManager.delegate = self
+                self.setupPermissionLocation()
+            }
+        }
+    }
+    
+    private func setupPermissionLocation() {
+        switch locationManager.authorizationStatus {
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .denied, .restricted:
+            print("MapsViewController # DENIED or RESTRICTED")
+        case .authorizedWhenInUse, .authorizedAlways:
+            DispatchQueue.main.async {
+                self.mapView.isMyLocationEnabled = true
+                self.mapView.settings.myLocationButton = true
+            }
+            locationManager.startUpdatingLocation()
+        default:
+            print("MapsViewController # DEFAULT")
+        }
+    }
+    
+}
 
+extension MapsViewController: CLLocationManagerDelegate {
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        self.checkServiceLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            let lat = location.coordinate.latitude
+            let lng = location.coordinate.longitude
+            print("MapsViewController # \(lat),\(lng)")
+        }
+    }
+    
 }
